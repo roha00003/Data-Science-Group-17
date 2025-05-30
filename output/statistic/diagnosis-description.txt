@@ -1,0 +1,482 @@
+CCSR Diagnosis Code  CCSR Diagnosis Description                                                                                                  
+BLD001               Nutritional anemia                                                                                                                5097
+BLD002               Hemolytic anemia                                                                                                                   682
+BLD003               Aplastic anemia                                                                                                                   2920
+BLD004               Acute posthemorrhagic anemia                                                                                                      3393
+BLD005               Sickle cell trait/anemia                                                                                                          7541
+BLD006               Coagulation and hemorrhagic disorders                                                                                             3366
+BLD007               Diseases of white blood cells                                                                                                     1951
+BLD008               Immunity disorders                                                                                                                 446
+BLD009               Postprocedural or postoperative complications of the spleen                                                                         27
+BLD010               Other specified and unspecified hematologic conditions                                                                             409
+CIR001               Chronic rheumatic heart disease                                                                                                   1796
+CIR002               Acute rheumatic heart disease                                                                                                       20
+CIR003               Nonrheumatic and unspecified valve disorders                                                                                     10499
+CIR004               Endocarditis and endocardial disease                                                                                               790
+CIR005               Myocarditis and cardiomyopathy                                                                                                    1654
+CIR006               Pericarditis and pericardial disease                                                                                              2817
+CIR007               Essential hypertension                                                                                                             685
+CIR008               Hypertension with complications and secondary hypertension                                                                       10480
+CIR009               Acute myocardial infarction                                                                                                      28217
+CIR010               Complications of acute myocardial infarction                                                                                        58
+CIR011               Coronary atherosclerosis and other heart disease                                                                                 23967
+CIR012               Nonspecific chest pain                                                                                                           11447
+CIR013               Acute pulmonary embolism                                                                                                         10487
+CIR014               Pulmonary heart disease                                                                                                            838
+CIR015               Other and ill-defined heart disease                                                                                                717
+CIR016               Conduction disorders                                                                                                              4781
+CIR017               Cardiac dysrhythmias                                                                                                             33350
+CIR018               Cardiac arrest and ventricular fibrillation                                                                                       1359
+CIR019               Heart failure                                                                                                                    59312
+CIR020               Cerebral infarction                                                                                                              29733
+CIR021               Acute hemorrhagic cerebrovascular disease                                                                                         7461
+CIR022               Sequela of hemorrhagic cerebrovascular disease                                                                                    1128
+CIR023               Occlusion or stenosis of precerebral or cerebral arteries without infarction                                                      4905
+CIR024               Other and ill-defined cerebrovascular disease                                                                                     2545
+CIR025               Sequela of cerebral infarction and other cerebrovascular disease                                                                  6242
+CIR026               Peripheral and visceral vascular disease                                                                                          4780
+CIR027               Arterial dissections                                                                                                              1435
+CIR028               Gangrene                                                                                                                           506
+CIR029               Aortic; peripheral; and visceral artery aneurysms                                                                                 3708
+CIR030               Aortic and peripheral arterial embolism or thrombosis                                                                              786
+CIR031               Hypotension                                                                                                                       6426
+CIR032               Other specified and unspecified circulatory disease                                                                                561
+CIR033               Acute phlebitis; thrombophlebitis and thromboembolism                                                                             5256
+CIR034               Chronic phlebitis; thrombophlebitis and thromboembolism                                                                            141
+CIR035               Varicose veins of lower extremity                                                                                                  407
+CIR036               Postthrombotic syndrome and venous insufficiency/hypertension                                                                     1036
+CIR038               Postprocedural or postoperative circulatory system complication                                                                   1012
+CIR039               Other specified diseases of veins and lymphatics                                                                                  1114
+DIG001               Intestinal infection                                                                                                              9580
+DIG002               Disorders of teeth and gingiva                                                                                                     780
+DIG003               Diseases of mouth; excluding dental                                                                                               1545
+DIG004               Esophageal disorders                                                                                                              6631
+DIG005               Gastroduodenal ulcer                                                                                                              1649
+DIG006               Gastrointestinal and biliary perforation                                                                                           469
+DIG007               Gastritis and duodenitis                                                                                                          5233
+DIG008               Other specified and unspecified disorders of stomach and duodenum                                                                 3007
+DIG009               Appendicitis and other appendiceal conditions                                                                                    12133
+DIG010               Abdominal hernia                                                                                                                  9931
+DIG011               Regional enteritis and ulcerative colitis                                                                                         5636
+DIG012               Intestinal obstruction and ileus                                                                                                 16100
+DIG013               Diverticulosis and diverticulitis                                                                                                16681
+DIG014               Hemorrhoids                                                                                                                       1738
+DIG015               Anal and rectal conditions                                                                                                        1564
+DIG016               Peritonitis and intra-abdominal abscess                                                                                           2819
+DIG017               Biliary tract disease                                                                                                            21813
+DIG018               Hepatic failure                                                                                                                   3054
+DIG019               Other specified and unspecified liver disease                                                                                     9205
+DIG020               Pancreatic disorders (excluding diabetes)                                                                                        13764
+DIG021               Gastrointestinal hemorrhage                                                                                                      15516
+DIG022               Noninfectious gastroenteritis                                                                                                     7108
+DIG023               Noninfectious hepatitis                                                                                                            554
+DIG024               Postprocedural or postoperative digestive system complication                                                                     7415
+DIG025               Other specified and unspecified gastrointestinal disorders                                                                        7222
+EAR001               Otitis media                                                                                                                       279
+EAR002               Diseases of middle ear and mastoid (except otitis media)                                                                           321
+EAR003               Diseases of inner ear and related conditions                                                                                      2468
+EAR004               Hearing loss                                                                                                                        29
+EAR005               Postprocedural or postoperative ear and/or mastoid process complication                                                              7
+EAR006               Other specified and unspecified disorders of the ear                                                                               443
+END001               Thyroid disorders                                                                                                                 1865
+END002               Diabetes mellitus without complication                                                                                              48
+END003               Diabetes mellitus with complication                                                                                              41375
+END007               Nutritional deficiencies                                                                                                           423
+END008               Malnutrition                                                                                                                       837
+END009               Obesity                                                                                                                          21165
+END010               Disorders of lipid metabolism                                                                                                      155
+END011               Fluid and electrolyte disorders                                                                                                  22412
+END012               Cystic fibrosis                                                                                                                    178
+END013               Pituitary disorders                                                                                                               3154
+END014               Postprocedural or postoperative endocrine or metabolic complication                                                                143
+END015               Other specified and unspecified endocrine disorders                                                                               1704
+END016               Other specified and unspecified nutritional and metabolic disorders                                                               3775
+EYE001               Cornea and external disease                                                                                                        232
+EYE002               Cataract and other lens disorders                                                                                                   38
+EYE003               Glaucoma                                                                                                                           106
+EYE004               Uveitis and ocular inflammation                                                                                                    109
+EYE005               Retinal and vitreous conditions                                                                                                    581
+EYE006               Neuro-ophthalmology                                                                                                                746
+EYE007               Strabismus                                                                                                                          13
+EYE008               Oculofacial plastics and orbital conditions                                                                                        387
+EYE009               Refractive error                                                                                                                     1
+EYE010               Blindness and vision defects                                                                                                       373
+EYE011               Postprocedural or postoperative eye complication                                                                                    30
+EYE012               Other specified eye disorders                                                                                                      260
+FAC002               Encounter for mental health services related to abuse                                                                                1
+FAC003               Encounter for observation and examination for conditions ruled out (excludes infectious disease, neoplasm, mental disorders)       283
+FAC004               Encounter for prophylactic or other procedures                                                                                     887
+FAC006               Encounter for antineoplastic therapies                                                                                            7847
+FAC007               Encounter for mental health conditions                                                                                               5
+FAC008               Neoplasm-related encounters                                                                                                        277
+FAC009               Implant, device or graft related encounter                                                                                         199
+FAC010               Other aftercare encounter                                                                                                        11995
+FAC012               Other specified encounters and counseling                                                                                            2
+FAC013               Contraceptive and procreative management                                                                                             9
+FAC014               Medical examination/evaluation                                                                                                      20
+FAC016               Exposure, encounters, screening or contact with infectious disease                                                                  43
+FAC020               Lifestyle/life management factors                                                                                                    1
+FAC022               Acquired absence of limb or organ                                                                                                   23
+FAC025               Other specified status                                                                                                             301
+GEN001               Nephritis; nephrosis; renal sclerosis                                                                                              566
+GEN002               Acute and unspecified renal failure                                                                                              24917
+GEN003               Chronic kidney disease                                                                                                           13209
+GEN004               Urinary tract infections                                                                                                         28041
+GEN005               Calculus of urinary tract                                                                                                         2328
+GEN006               Other specified and unspecified diseases of kidney and ureters                                                                    6727
+GEN007               Other specified and unspecified diseases of bladder and urethra                                                                   1002
+GEN008               Urinary incontinence                                                                                                                80
+GEN009               Hematuria                                                                                                                          954
+GEN010               Proteinuria                                                                                                                         13
+GEN011               Vesicoureteral reflux                                                                                                              102
+GEN012               Hyperplasia of prostate                                                                                                           2603
+GEN013               Inflammatory conditions of male genital organs                                                                                    1451
+GEN014               Erectile dysfunction                                                                                                                78
+GEN015               Male infertility                                                                                                                     3
+GEN016               Other specified male genital disorders                                                                                             579
+GEN017               Nonmalignant breast conditions                                                                                                     868
+GEN018               Inflammatory diseases of female pelvic organs                                                                                     1428
+GEN019               Endometriosis                                                                                                                      831
+GEN020               Prolapse of female genital organs                                                                                                  842
+GEN021               Menstrual disorders                                                                                                                454
+GEN022               Benign ovarian cyst                                                                                                                844
+GEN023               Menopausal disorders                                                                                                               222
+GEN024               Female infertility                                                                                                                   3
+GEN025               Other specified female genital disorders                                                                                          1696
+GEN026               Postprocedural or postoperative genitourinary system complication                                                                 1504
+INF001               Tuberculosis                                                                                                                       395
+INF002               Septicemia                                                                                                                      140541
+INF003               Bacterial infections                                                                                                               287
+INF004               Fungal infections                                                                                                                  187
+INF005               Foodborne intoxications                                                                                                            239
+INF006               HIV infection                                                                                                                     1212
+INF007               Hepatitis                                                                                                                         1578
+INF008               Viral infection                                                                                                                   3472
+INF009               Parasitic, other specified and unspecified infections                                                                              871
+INF010               Sexually transmitted infections (excluding HIV and hepatitis)                                                                      518
+INF011               Sequela of specified infectious disease conditions                                                                                   1
+INF012               COVID-19                                                                                                                         53151
+INJ001               Fracture of head and neck, initial encounter                                                                                      2871
+INJ002               Fracture of the spine and back, initial encounter                                                                                 5573
+INJ003               Fracture of torso, initial encounter                                                                                              6759
+INJ004               Fracture of the upper limb, initial encounter                                                                                     7003
+INJ005               Fracture of the lower limb (except hip), initial encounter                                                                       12653
+INJ006               Fracture of the neck of the femur (hip), initial encounter                                                                       16814
+INJ007               Dislocations, initial encounter                                                                                                   1230
+INJ008               Traumatic brain injury (TBI); concussion, initial encounter                                                                      11522
+INJ009               Spinal cord injury (SCI), initial encounter                                                                                        613
+INJ010               Internal organ injury, initial encounter                                                                                          4822
+INJ011               Open wounds of head and neck, initial encounter                                                                                   1528
+INJ012               Open wounds to limbs, initial encounter                                                                                           1694
+INJ013               Open wounds of trunk, initial encounter                                                                                            797
+INJ014               Amputation of a limb, initial encounter                                                                                            260
+INJ015               Amputation of other body parts, initial encounter                                                                                   12
+INJ016               Injury to blood vessels, initial encounter                                                                                         449
+INJ017               Superficial injury; contusion, initial encounter                                                                                  2362
+INJ018               Crushing injury, initial encounter                                                                                                 163
+INJ019               Burn and corrosion, initial encounter                                                                                             1957
+INJ020               Effect of foreign body entering opening, initial encounter                                                                        1676
+INJ021               Effect of other external causes, initial encounter                                                                                 632
+INJ022               Poisoning by drugs, initial encounter                                                                                             9452
+INJ023               Toxic effects, initial encounter                                                                                                   918
+INJ024               Sprains and strains, initial encounter                                                                                            1243
+INJ025               Injury to nerves, muscles and tendons, initial encounter                                                                           293
+INJ026               Other specified injury                                                                                                            1753
+INJ027               Other unspecified injury                                                                                                           446
+INJ028               Adverse effects of drugs and medicaments, initial encounter                                                                          9
+INJ030               Drug induced or toxic related condition                                                                                           2824
+INJ031               Allergic reactions                                                                                                                1302
+INJ032               Maltreatment/abuse                                                                                                                 428
+INJ033               Complication of cardiovascular device, implant or graft, initial encounter                                                       11726
+INJ034               Complication of genitourinary device, implant or graft, initial encounter                                                        10627
+INJ035               Complication of internal orthopedic device or implant, initial encounter                                                          8632
+INJ036               Complication of transplanted organs or tissue, initial encounter                                                                  4074
+INJ037               Complication of other surgical or medical care, injury, initial encounter                                                        19434
+INJ038               Fracture of head and neck, subsequent encounter                                                                                     46
+INJ039               Fracture of the spine and back, subsequent encounter                                                                               392
+INJ040               Fracture of torso, subsequent encounter                                                                                            429
+INJ041               Fracture of the upper limb, subsequent encounter                                                                                   350
+INJ042               Fracture of lower limb (except hip), subsequent encounter                                                                          958
+INJ043               Fracture of the neck of the femur (hip), subsequent encounter                                                                     1410
+INJ044               Dislocations, subsequent encounter                                                                                                  18
+INJ045               Traumatic brain injury (TBI); concussion, subsequent encounter                                                                     987
+INJ046               Spinal cord injury (SCI), subsequent encounter                                                                                     230
+INJ047               Internal organ injury, subsequent encounter                                                                                         70
+INJ048               Open wounds of head and neck, subsequent encounter                                                                                   7
+INJ049               Open wounds to limbs, subsequent encounter                                                                                          41
+INJ050               Open wounds of trunk, subsequent encounter                                                                                           7
+INJ051               Amputation of a limb, subsequent encounter                                                                                          12
+INJ053               Injury to blood vessels, subsequent encounter                                                                                        7
+INJ054               Superficial injury; contusion, subsequent encounter                                                                                 20
+INJ055               Crushing injury, subsequent encounter                                                                                                5
+INJ056               Burns and corrosion, subsequent encounter                                                                                           72
+INJ057               Effect of foreign body entering opening, subsequent encounter                                                                        2
+INJ058               Effect of other external causes, subsequent encounter                                                                                6
+INJ059               Poisoning by drugs, subsequent encounter                                                                                             6
+INJ060               Toxic effects, subsequent encounter                                                                                                 11
+INJ061               Sprains and strains, subsequent encounter                                                                                           57
+INJ062               Injury to nerves, muscles and tendons, subsequent encounter                                                                         11
+INJ063               Other specified injury, subsequent encounter                                                                                        30
+INJ064               Other unspecified injuries, subsequent encounter                                                                                     8
+INJ067               Allergic reactions, subsequent encounter                                                                                             2
+INJ068               Maltreatment/abuse, subsequent encounter                                                                                             4
+INJ069               Complication of cardiovascular device, implant or graft, subsequent encounter                                                       27
+INJ070               Complication of genitourinary device, implant or graft, subsequent encounter                                                        14
+INJ071               Complication of internal orthopedic device or implant, subsequent encounter                                                        152
+INJ072               Complication of other surgical or medical care, injury, subsequent encounter                                                        62
+INJ073               Injury, sequela                                                                                                                    126
+INJ074               Effect of other external causes, sequela                                                                                             1
+INJ075               Poisoning/toxic effect/adverse effects/underdosing, sequela                                                                          2
+INJ076               Complication, sequela                                                                                                               22
+MAL001               Cardiac and circulatory congenital anomalies                                                                                      2855
+MAL002               Digestive congenital anomalies                                                                                                     805
+MAL003               Genitourinary congenital anomalies                                                                                                 466
+MAL004               Nervous system congenital anomalies                                                                                                579
+MAL005               Congenital malformations of eye, ear, face, neck                                                                                    89
+MAL006               Cleft lip or palate                                                                                                                193
+MAL007               Respiratory congenital malformations                                                                                               269
+MAL008               Musculoskeletal congenital conditions                                                                                             1130
+MAL009               Chromosomal abnormalities                                                                                                           20
+MAL010               Other specified and unspecified congenital anomalies                                                                               275
+MBD001               Schizophrenia spectrum and other psychotic disorders                                                                             34985
+MBD002               Depressive disorders                                                                                                             21888
+MBD003               Bipolar and related disorders                                                                                                    16135
+MBD004               Other specified and unspecified mood disorders                                                                                    2512
+MBD005               Anxiety and fear-related disorders                                                                                                1598
+MBD006               Obsessive-compulsive and related disorders                                                                                         168
+MBD007               Trauma- and stressor-related disorders                                                                                            4118
+MBD008               Disruptive, impulse-control and conduct disorders                                                                                  775
+MBD009               Personality disorders                                                                                                             1193
+MBD010               Feeding and eating disorders                                                                                                       747
+MBD011               Somatic disorders                                                                                                                  171
+MBD012               Suicidal ideation/attempt/intentional self-harm                                                                                   5223
+MBD013               Miscellaneous mental and behavioral disorders/conditions                                                                           817
+MBD014               Neurodevelopmental disorders                                                                                                       998
+MBD017               Alcohol-related disorders                                                                                                        40031
+MBD018               Opioid-related disorders                                                                                                          9794
+MBD019               Cannabis-related disorders                                                                                                         748
+MBD020               Sedative-related disorders                                                                                                        1613
+MBD021               Stimulant-related disorders                                                                                                       3648
+MBD022               Hallucinogen-related disorders                                                                                                     210
+MBD023               Inhalant-related disorders                                                                                                           7
+MBD024               Tobacco-related disorders                                                                                                            1
+MBD025               Other specified substance-related disorders                                                                                       1738
+MBD026               Mental and substance use disorders in remission                                                                                    128
+MBD027               Suicide attempt/intentional self-harm; subsequent encounter                                                                          4
+MUS001               Infective arthritis                                                                                                               1367
+MUS002               Osteomyelitis                                                                                                                     3248
+MUS003               Rheumatoid arthritis and related disease                                                                                           469
+MUS004               Juvenile arthritis                                                                                                                  30
+MUS005               Other specified chronic arthropathy                                                                                                  3
+MUS006               Osteoarthritis                                                                                                                   32206
+MUS007               Other specified joint disorders                                                                                                   1011
+MUS008               Immune-mediated/reactive arthropathies                                                                                              35
+MUS009               Tendon and synovial disorders                                                                                                      942
+MUS010               Musculoskeletal pain, not low back pain                                                                                           2083
+MUS011               Spondylopathies/spondyloarthropathy (including infective)                                                                        28227
+MUS012               Biomechanical lesions                                                                                                               27
+MUS013               Osteoporosis                                                                                                                      2065
+MUS014               Pathological fracture, initial encounter                                                                                          1799
+MUS015               Pathological fracture, subsequent encounter                                                                                        141
+MUS016               Stress fracture, initial encounter                                                                                                1335
+MUS017               Stress fracture, subsequent encounter                                                                                               53
+MUS018               Atypical fracture, initial encounter                                                                                                36
+MUS019               Atypical fracture, subsequent encounter                                                                                              4
+MUS020               Pathological, stress and atypical fractures, sequela                                                                                14
+MUS021               Acquired foot deformities                                                                                                          194
+MUS022               Scoliosis and other postural dorsopathic deformities                                                                              1471
+MUS023               Acquired deformities (excluding foot)                                                                                              603
+MUS024               Systemic lupus erythematosus and connective tissue disorders                                                                      2224
+MUS025               Other specified connective tissue disease                                                                                         1697
+MUS026               Muscle disorders                                                                                                                  3445
+MUS027               Musculoskeletal abscess                                                                                                             69
+MUS028               Other specified bone disease and musculoskeletal deformities                                                                       939
+MUS029               Disorders of jaw                                                                                                                  1046
+MUS030               Aseptic necrosis and osteonecrosis                                                                                                 544
+MUS031               Traumatic arthropathy                                                                                                              100
+MUS032               Neurogenic/neuropathic arthropathy                                                                                                  32
+MUS033               Gout                                                                                                                              1135
+MUS034               Crystal arthropathies (excluding gout)                                                                                             225
+MUS035               Osteomalacia                                                                                                                         1
+MUS036               Autoinflammatory syndromes                                                                                                          23
+MUS037               Postprocedural or postoperative musculoskeletal system complication                                                               1321
+MUS038               Low back pain                                                                                                                      888
+NEO001               Head and neck cancers - eye                                                                                                         58
+NEO002               Head and neck cancers - lip and oral cavity                                                                                       1057
+NEO003               Head and neck cancers - throat                                                                                                     135
+NEO004               Head and neck cancers - salivary gland                                                                                             180
+NEO005               Head and neck cancers - nasopharyngeal                                                                                              63
+NEO006               Head and neck cancers - hypopharyngeal                                                                                              79
+NEO007               Head and neck cancers - pharyngeal                                                                                                  35
+NEO008               Head and neck cancers - laryngeal                                                                                                  442
+NEO009               Head and neck cancers - tonsils                                                                                                    152
+NEO010               Head and neck cancers - all other types                                                                                            239
+NEO011               Cardiac cancers                                                                                                                    100
+NEO012               Gastrointestinal cancers - esophagus                                                                                               969
+NEO013               Gastrointestinal cancers - stomach                                                                                                2264
+NEO014               Gastrointestinal cancers - small intestine                                                                                         434
+NEO015               Gastrointestinal cancers - colorectal                                                                                             7890
+NEO016               Gastrointestinal cancers - anus                                                                                                    231
+NEO017               Gastrointestinal cancers - liver                                                                                                  1230
+NEO018               Gastrointestinal cancers - bile duct                                                                                               675
+NEO019               Gastrointestinal cancers - gallbladder                                                                                             213
+NEO020               Gastrointestinal cancers - peritoneum                                                                                              146
+NEO021               Gastrointestinal cancers - all other types                                                                                         724
+NEO022               Respiratory cancers                                                                                                               8722
+NEO023               Bone cancer                                                                                                                        446
+NEO024               Sarcoma                                                                                                                            620
+NEO025               Skin cancers - melanoma                                                                                                            119
+NEO026               Skin cancers - basal cell carcinoma                                                                                                 64
+NEO027               Skin cancers - squamous cell carcinoma                                                                                             216
+NEO028               Skin cancers - all other types                                                                                                      79
+NEO029               Breast cancer - ductal carcinoma in situ (DCIS)                                                                                    638
+NEO030               Breast cancer - all other types                                                                                                   2862
+NEO031               Female reproductive system cancers - uterus                                                                                        369
+NEO032               Female reproductive system cancers - cervix                                                                                        582
+NEO033               Female reproductive system cancers - ovary                                                                                        1441
+NEO034               Female reproductive system cancers - fallopian tube                                                                                135
+NEO035               Female reproductive system cancers - endometrium                                                                                  1252
+NEO036               Female reproductive system cancers - vulva                                                                                         190
+NEO037               Female reproductive system cancers - vagina                                                                                         40
+NEO038               Female reproductive system cancers - all other types                                                                               113
+NEO039               Male reproductive system cancers - prostate                                                                                       3229
+NEO040               Male reproductive system cancers - testis                                                                                           70
+NEO041               Male reproductive system cancers - penis                                                                                            55
+NEO042               Male reproductive system cancers - all other types                                                                                  14
+NEO043               Urinary system cancers - bladder                                                                                                  2008
+NEO044               Urinary system cancers - ureter and renal pelvis                                                                                   427
+NEO045               Urinary system cancers - kidney                                                                                                   2651
+NEO046               Urinary system cancers - urethra                                                                                                    33
+NEO047               Urinary system cancers - all other types                                                                                            74
+NEO048               Nervous system cancers - brain                                                                                                    2552
+NEO049               Nervous system cancers - all other types                                                                                           100
+NEO050               Endocrine system cancers - thyroid                                                                                                 829
+NEO051               Endocrine system cancers - pancreas                                                                                               3162
+NEO052               Endocrine system cancers - thymus                                                                                                  188
+NEO053               Endocrine system cancers - adrenocortical                                                                                           26
+NEO054               Endocrine system cancers - parathyroid                                                                                               7
+NEO055               Endocrine system cancers - pituitary gland                                                                                           8
+NEO056               Endocrine system cancers - all other types                                                                                         143
+NEO057               Hodgkin lymphoma                                                                                                                   258
+NEO058               Non-Hodgkin lymphoma                                                                                                              3150
+NEO059               Leukemia - acute lymphoblastic leukemia (ALL)                                                                                      569
+NEO060               Leukemia - acute myeloid leukemia (AML)                                                                                           1553
+NEO061               Leukemia - chronic lymphocytic leukemia (CLL)                                                                                      359
+NEO062               Leukemia - chronic myeloid leukemia (CML)                                                                                          291
+NEO063               Leukemia - hairy cell                                                                                                                8
+NEO064               Leukemia - all other types                                                                                                         275
+NEO065               Multiple myeloma                                                                                                                  2131
+NEO066               Malignant neuroendocrine tumors                                                                                                   1143
+NEO067               Mesothelioma                                                                                                                       195
+NEO068               Myelodysplastic syndrome (MDS)                                                                                                     690
+NEO069               Cancer of other sites                                                                                                              101
+NEO070               Secondary malignancies                                                                                                           15116
+NEO071               Malignant neoplasm, unspecified                                                                                                    223
+NEO072               Neoplasms of unspecified nature or uncertain behavior                                                                             1879
+NEO073               Benign neoplasms                                                                                                                 13340
+NEO074               Conditions due to neoplasm or the treatment of neoplasm                                                                           3493
+NVS001               Meningitis                                                                                                                         821
+NVS002               Encephalitis                                                                                                                       821
+NVS003               Other specified CNS infection and poliomyelitis                                                                                     65
+NVS004               Parkinson`s disease                                                                                                               2104
+NVS005               Multiple sclerosis                                                                                                                1349
+NVS006               Other nervous system disorders (often hereditary or degenerative)                                                                 1297
+NVS007               Cerebral palsy                                                                                                                      75
+NVS008               Paralysis (other than cerebral palsy)                                                                                             1062
+NVS009               Epilepsy; convulsions                                                                                                            23011
+NVS010               Headache; including migraine                                                                                                      2952
+NVS011               Neurocognitive disorders                                                                                                          7064
+NVS012               Transient cerebral ischemia                                                                                                       6243
+NVS013               Coma; stupor; and brain damage                                                                                                     255
+NVS014               CNS abscess                                                                                                                        573
+NVS015               Polyneuropathies                                                                                                                  1431
+NVS016               Sleep wake disorders                                                                                                               588
+NVS017               Nerve and nerve root disorders                                                                                                    1545
+NVS018               Myopathies                                                                                                                         858
+NVS019               Nervous system pain and pain syndromes                                                                                            1624
+NVS020               Other nervous system disorders (neither hereditary nor degenerative)                                                             11573
+NVS021               Postprocedural or postoperative nervous system complication                                                                        441
+NVS022               Sequela of specified nervous system conditions                                                                                       2
+PNL001               Liveborn                                                                                                                        199559
+PNL002               Short gestation; low birth weight; and fetal growth retardation                                                                    310
+PNL003               Neonatal acidemia and hypoxia                                                                                                       21
+PNL004               Neonatal cerebral disorders                                                                                                        196
+PNL005               Respiratory distress syndrome                                                                                                      273
+PNL006               Respiratory perinatal condition                                                                                                    476
+PNL007               Hemolytic jaundice and perinatal jaundice                                                                                         2273
+PNL008               Birth trauma                                                                                                                        31
+PNL009               Perinatal infections                                                                                                               764
+PNL010               Newborn affected by maternal conditions or complications of labor/delivery                                                          33
+PNL011               Hemorrhagic and hematologic disorders of newborn                                                                                    66
+PNL012               Neonatal digestive and feeding disorders                                                                                           381
+PNL013               Other specified and unspecified perinatal conditions                                                                               941
+PNL014               Neonatal abstinence syndrome                                                                                                        45
+PRG001               Antenatal screening                                                                                                                  4
+PRG003               Spontaneous abortion and complications of spontaneous abortion                                                                    1028
+PRG004               Induced abortion and complications of termination of pregnancy                                                                     343
+PRG005               Ectopic pregnancy and complications of ectopic pregnancy                                                                          1060
+PRG006               Molar pregnancy and other abnormal products of conception                                                                          541
+PRG007               Complications following ectopic and/or molar pregnancy                                                                              11
+PRG009               Early, first or unspecified trimester hemorrhage                                                                                    59
+PRG010               Hemorrhage after first trimester                                                                                                   381
+PRG011               Early or threatened labor                                                                                                        12168
+PRG012               Multiple gestation                                                                                                                1245
+PRG013               Maternal care related to fetal conditions                                                                                        12667
+PRG014               Polyhydramnios and other problems of amniotic cavity                                                                              6488
+PRG015               Obstetric history affecting care in pregnancy                                                                                       24
+PRG016               Previous C-section                                                                                                               23319
+PRG017               Maternal care for abnormality of pelvic organs                                                                                    1472
+PRG018               Maternal care related to disorders of the placenta and placental implantation                                                     2934
+PRG019               Diabetes or abnormal glucose tolerance complicating pregnancy; childbirth; or the puerperium                                      9628
+PRG020               Hypertension and hypertensive-related conditions complicating pregnancy; childbirth; and the puerperium                          23160
+PRG021               Maternal intrauterine infection                                                                                                    542
+PRG022               Prolonged pregnancy                                                                                                              22596
+PRG023               Complications specified during childbirth                                                                                        40674
+PRG024               Malposition, disproportion or other labor complications                                                                          19519
+PRG025               Anesthesia complications during pregnancy                                                                                            5
+PRG026               OB-related trauma to perineum and vulva                                                                                          11057
+PRG027               Complications specified during the puerperium                                                                                     2475
+PRG028               Other specified complications in pregnancy                                                                                        8956
+PRG029               Uncomplicated pregnancy, delivery or puerperium                                                                                  18698
+RSP001               Sinusitis                                                                                                                          394
+RSP002               Pneumonia (except that caused by tuberculosis)                                                                                   28035
+RSP003               Influenza                                                                                                                         6552
+RSP004               Acute and chronic tonsillitis                                                                                                     1353
+RSP005               Acute bronchitis                                                                                                                  8989
+RSP006               Other specified upper respiratory infections                                                                                      2630
+RSP007               Other specified and unspecified upper respiratory disease                                                                          971
+RSP008               Chronic obstructive pulmonary disease and bronchiectasis                                                                         20326
+RSP009               Asthma                                                                                                                           15422
+RSP010               Aspiration pneumonitis                                                                                                            7438
+RSP011               Pleurisy, pleural effusion and pulmonary collapse                                                                                 3458
+RSP012               Respiratory failure; insufficiency; arrest                                                                                       21136
+RSP013               Lung disease due to external agents                                                                                                303
+RSP014               Pneumothorax                                                                                                                      1794
+RSP015               Mediastinal disorders                                                                                                              157
+RSP016               Other specified and unspecified lower respiratory disease                                                                         3451
+RSP017               Postprocedural or postoperative respiratory system complication                                                                   2044
+SKN001               Skin and subcutaneous tissue infections                                                                                          24980
+SKN002               Other specified inflammatory condition of skin                                                                                    1492
+SKN003               Pressure ulcer of skin                                                                                                            1569
+SKN004               Non-pressure ulcer of skin                                                                                                         833
+SKN005               Contact dermatitis                                                                                                                 143
+SKN006               Postprocedural or postoperative skin complication                                                                                  956
+SKN007               Other specified and unspecified skin disorders                                                                                     534
+SYM001               Syncope                                                                                                                           9939
+SYM002               Fever                                                                                                                             1625
+SYM003               Shock                                                                                                                              319
+SYM004               Nausea and vomiting                                                                                                               2597
+SYM005               Dysphagia                                                                                                                          829
+SYM006               Abdominal pain and other digestive/abdomen signs and symptoms                                                                     3987
+SYM007               Malaise and fatigue                                                                                                               3800
+SYM008               Symptoms of mental and substance use conditions                                                                                    208
+SYM010               Nervous system signs and symptoms                                                                                                 4965
+SYM011               Genitourinary signs and symptoms                                                                                                   414
+SYM012               Circulatory signs and symptoms                                                                                                    2946
+SYM013               Respiratory signs and symptoms                                                                                                    2424
+SYM014               Skin/Subcutaneous signs and symptoms                                                                                               883
+SYM015               General sensation/perception signs and symptoms                                                                                   2013
+SYM016               Other general signs and symptoms                                                                                                  4623
+SYM017               Abnormal findings without diagnosis                                                                                               3249
+XXX000               Unacceptable PDX                                                                                                                     1
+Name: count, dtype: int64

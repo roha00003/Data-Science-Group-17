@@ -1,0 +1,5 @@
+Gender
+F    1151016
+M     952158
+U        259
+Name: count, dtype: int64

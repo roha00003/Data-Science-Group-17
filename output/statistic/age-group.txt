@@ -1,0 +1,7 @@
+Age Group
+70 or Older    644330
+50 to 69       566245
+30 to 49       404692
+0 to 17        302312
+18 to 29       185854
+Name: count, dtype: int64

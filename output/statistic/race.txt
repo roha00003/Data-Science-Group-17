@@ -1,0 +1,6 @@
+Race
+White                     1123873
+Other Race                 567990
+Black/African American     384195
+Multi-racial                27375
+Name: count, dtype: int64

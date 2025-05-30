@@ -1,0 +1,5 @@
+APR Medical Surgical Description
+Medical           1609927
+Surgical           492870
+Not Applicable        636
+Name: count, dtype: int64

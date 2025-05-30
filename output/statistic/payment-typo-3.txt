@@ -1,0 +1,11 @@
+Payment Typology 3
+Self-Pay                     173927
+Medicaid                      68668
+Private Health Insurance      20553
+Blue Cross/Blue Shield        11692
+Medicare                      10948
+Federal/State/Local/VA         2133
+Miscellaneous/Other             687
+Managed Care, Unspecified       440
+Department of Corrections        23
+Name: count, dtype: int64

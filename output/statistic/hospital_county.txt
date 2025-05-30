@@ -1,0 +1,119 @@
+   Hospital Service Area Hospital County   count
+0        Capital/Adirond          Albany   58334
+1        Capital/Adirond     Schenectady   14541
+2        Capital/Adirond          Warren   11962
+3        Capital/Adirond        Saratoga   10987
+4        Capital/Adirond          Otsego    9898
+5        Capital/Adirond      Rensselaer    9472
+6        Capital/Adirond         Clinton    8034
+7        Capital/Adirond      Montgomery    3180
+8        Capital/Adirond        Franklin    3060
+9        Capital/Adirond        Columbia    2898
+10       Capital/Adirond          Fulton    2549
+11       Capital/Adirond           Essex     563
+12       Capital/Adirond       Schoharie     400
+13       Capital/Adirond        Delaware     357
+14            Central NY        Onondaga   67017
+15            Central NY          Oneida   23472
+16            Central NY       Jefferson   10619
+17            Central NY     St Lawrence    9525
+18            Central NY        Tompkins    5967
+19            Central NY          Oswego    4757
+20            Central NY          Cayuga    4707
+21            Central NY         Madison    3800
+22            Central NY        Cortland    3713
+23            Central NY           Lewis     795
+24            Central NY        Herkimer     584
+25          Finger Lakes          Monroe  101290
+26          Finger Lakes         Ontario   11199
+27          Finger Lakes         Chemung    8688
+28          Finger Lakes         Steuben    5573
+29          Finger Lakes           Wayne    5021
+30          Finger Lakes      Livingston    2254
+31          Finger Lakes           Yates     288
+32          Finger Lakes        Schuyler     283
+33         Hudson Valley     Westchester  117136
+34         Hudson Valley        Dutchess   36199
+35         Hudson Valley          Orange   35305
+36         Hudson Valley        Rockland   30775
+37         Hudson Valley          Ulster    5804
+38         Hudson Valley        Sullivan    3863
+39         Hudson Valley          Putnam    3572
+40           Long Island          Nassau  183939
+41           Long Island         Suffolk  157340
+42         New York City       Manhattan  370297
+43         New York City           Kings  190952
+44         New York City          Queens  177543
+45         New York City           Bronx  161381
+46         New York City        Richmond   50794
+47         Southern Tier          Broome   25262
+48         Southern Tier        Chenango    1217
+49            Western NY            Erie  109983
+50            Western NY         Niagara    8916
+51            Western NY      Chautauqua    7272
+52            Western NY     Cattaraugus    5520
+53            Western NY         Genesee    4899
+54            Western NY         Wyoming    2145
+55            Western NY        Allegany    1894
+56            Western NY         Orleans     248
+
+Hospital County
+
+Manhattan      370297
+Kings          190952
+Nassau         183939
+Queens         177543
+Bronx          161381
+Suffolk        157340
+Westchester    117136
+Erie           109983
+Monroe         101290
+Onondaga        67017
+Albany          58334
+Richmond        50794
+Dutchess        36199
+Orange          35305
+Rockland        30775
+Broome          25262
+Oneida          23472
+Schenectady     14541
+Warren          11962
+Ontario         11199
+Saratoga        10987
+Jefferson       10619
+Otsego           9898
+St Lawrence      9525
+Rensselaer       9472
+Niagara          8916
+Chemung          8688
+Clinton          8034
+Chautauqua       7272
+Tompkins         5967
+Ulster           5804
+Steuben          5573
+Cattaraugus      5520
+Wayne            5021
+Genesee          4899
+Oswego           4757
+Cayuga           4707
+Sullivan         3863
+Madison          3800
+Cortland         3713
+Putnam           3572
+Montgomery       3180
+Franklin         3060
+Columbia         2898
+Fulton           2549
+Livingston       2254
+Wyoming          2145
+Allegany         1894
+Chenango         1217
+Lewis             795
+Herkimer          584
+Essex             563
+Schoharie         400
+Delaware          357
+Yates             288
+Schuyler          283
+Orleans           248
+Name: count, dtype: int64

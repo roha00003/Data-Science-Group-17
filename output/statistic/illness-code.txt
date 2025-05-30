@@ -1,0 +1,7 @@
+APR Severity of Illness Code
+2    757732
+1    625731
+3    504106
+4    215228
+0       636
+Name: count, dtype: int64

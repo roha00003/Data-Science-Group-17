@@ -1,0 +1,6 @@
+APR Risk of Mortality
+Minor       1051624
+Moderate     441471
+Major        399691
+Extreme      210011
+Name: count, dtype: int64

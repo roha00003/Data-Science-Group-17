@@ -1,0 +1,323 @@
+CCSR Procedure Code  CCSR Procedure Description                                                                      
+ADM001               TRANSFUSION OF BLOOD AND BLOOD PRODUCTS                                                              36138
+ADM002               TRANSFUSION OF PLASMA                                                                                  797
+ADM003               ADMINISTRATION OF ALBUMIN AND GLOBULIN                                                                1566
+ADM004               TRANSFUSION OF CLOTTING FACTORS                                                                        428
+ADM005               ADMINISTRATION OF THROMBOLYTICS AND PLATELET INHIBITORS                                               3566
+ADM006               INFUSION OF VASOPRESSOR                                                                               2011
+ADM007               INTRAVENOUS INDUCTION OF LABOR                                                                        3461
+ADM008               CERVICAL RIPENING                                                                                      432
+ADM009               RH IMMUNOGLOBULIN AND OTHER SERUM INFUSION                                                             113
+ADM010               VACCINATIONS                                                                                         62412
+ADM011               ADMINISTRATION AND TRANSFUSION OF BONE MARROW, STEM CELLS, PANCREATIC ISLET CELLS, AND T-CELLS        1438
+ADM012               CHEMOTHERAPY                                                                                          9141
+ADM013               PERITONEAL DIALYSIS                                                                                    543
+ADM014               REGIONAL ANESTHESIA                                                                                   3161
+ADM015               ADMINISTRATION OF ANTIBIOTICS                                                                        35194
+ADM016               ADMINISTRATION OF ANTI-INFLAMMATORY AGENTS                                                            6326
+ADM017               ADMINISTRATION OF NUTRITIONAL AND ELECTROLYTIC SUBSTANCES                                            21025
+ADM018               IRRIGATION (DIAGNOSTIC AND THERAPEUTIC)                                                               1091
+ADM019               POTENTIAL COVID-19 THERAPIES                                                                         32505
+ADM020               ADMINISTRATION OF DIAGNOSTIC SUBSTANCES, NEC                                                           265
+ADM021               ADMINISTRATION OF THERAPEUTIC SUBSTANCES, NEC                                                        50569
+ADM022               COVID-19 VACCINATIONS                                                                                 1140
+CAR001               HEART BIOPSY                                                                                           171
+CAR002               HEART CONDUCTION MECHANISM PROCEDURES                                                                 4302
+CAR003               CORONARY ARTERY BYPASS GRAFTS (CABG)                                                                  7291
+CAR004               PERCUTANEOUS CORONARY INTERVENTIONS (PCI)                                                            21703
+CAR005               OTHER CORONARY ARTERY PROCEDURES (EXCLUDING CABG AND PCI)                                              143
+CAR006               CAROTID ENDARTERECTOMY AND STENTING                                                                   5123
+CAR007               EMBOLECTOMY, ENDARTERECTOMY, AND RELATED VESSEL PROCEDURES (NON-ENDOVASCULAR; EXCLUDING CAROTID)      2180
+CAR008               ANGIOPLASTY AND RELATED VESSEL PROCEDURES (ENDOVASCULAR; EXCLUDING CAROTID)                          10367
+CAR009               LEFT ATRIAL APPENDAGE PROCEDURES                                                                      2728
+CAR010               LIGATION AND EMBOLIZATION OF VESSELS                                                                  3693
+CAR011               ANEURYSM REPAIR PROCEDURES                                                                            4654
+CAR012               VESSEL REPAIR AND REPLACEMENT                                                                         1446
+CAR013               HEART AND GREAT VESSEL BYPASS PROCEDURES                                                               241
+CAR014               PERIPHERAL ARTERIAL BYPASS PROCEDURES                                                                 2451
+CAR015               PERIPHERAL ARTERIOVENOUS FISTULA AND SHUNT PROCEDURES                                                 1119
+CAR016               PORTAL AND OTHER VENOUS BYPASS PROCEDURES                                                              317
+CAR017               PERICARDIAL PROCEDURES                                                                                1661
+CAR018               HEART TRANSPLANT                                                                                       325
+CAR019               SEPTAL REPAIR AND OTHER THERAPEUTIC HEART PROCEDURES                                                  1049
+CAR020               SAPHENOUS VEIN HARVEST AND OTHER THERAPEUTIC VESSEL REMOVAL                                            686
+CAR021               ARTERY, VEIN, AND GREAT VESSEL PROCEDURES, NEC                                                         704
+CAR022               HEART VALVE REPLACEMENT AND OTHER VALVE PROCEDURES (NON-ENDOVASCULAR)                                 4684
+CAR023               HEART VALVE REPLACEMENT AND OTHER VALVE PROCEDURES (ENDOVASCULAR)                                     7906
+CAR024               VENOUS AND ARTERIAL CATHETER PLACEMENT                                                               32010
+CAR025               PLACEMENT OF TUNNELED OR IMPLANTABLE PORTION OF A VASCULAR ACCESS DEVICE                              4288
+CAR026               PACEMAKER AND DEFIBRILLATOR PROCEDURES                                                               10009
+CAR027               HEART ASSIST DEVICE PROCEDURES                                                                         812
+CAR028               INFERIOR VENA CAVA (IVC) FILTER PROCEDURES                                                            1283
+CAR029               CARDIOVASCULAR DEVICE PROCEDURES, NEC                                                                 1606
+CHP001               CHIROPRACTIC MANIPULATION                                                                                1
+CNS001               MINIMALLY INVASIVE CNS BIOPSY                                                                          590
+CNS002               LUMBAR PUNCTURE                                                                                      10026
+CNS003               SPINAL CANAL AND SPINAL CORD DRAINAGE (EXCLUDING LUMBAR PUNCTURE)                                      239
+CNS004               INTRACRANIAL EPIDURAL AND SUBDURAL SPACE DRAINAGE                                                     1745
+CNS005               VENTRICULOSTOMY [PERCUTANEOUS APPROACH]                                                                883
+CNS006               OTHER CNS DRAINAGE AND RELATED PROCEDURES                                                              707
+CNS007               CNS EXCISION PROCEDURES                                                                               4877
+CNS008               SPINAL CORD DECOMPRESSION                                                                             1974
+CNS009               DECOMPRESSIVE CRANIECTOMY                                                                              550
+CNS010               CEREBROSPINAL FLUID SHUNT PROCEDURES                                                                  1091
+CNS011               MENINGES REPAIR                                                                                        486
+CNS012               CNS NEUROSTIMULATOR PROCEDURES                                                                         698
+CNS013               SPINAL EPIDURAL CATHETER PLACEMENT                                                                     100
+CNS014               CNS PROCEDURES, NEC                                                                                   1092
+ENP001               ENDOCRINE SYSTEM BIOPSY                                                                                173
+ENP002               THYROIDECTOMY                                                                                         1367
+ENP003               PARATHYROIDECTOMY                                                                                      277
+ENP004               ADRENALECTOMY                                                                                          565
+ENP005               PITUITARY GLAND RESECTION                                                                              813
+ENP006               ENDOCRINE PROCEDURES, NEC                                                                               63
+ENT001               LARYNGOSCOPY (DIAGNOSTIC)                                                                             1820
+ENT002               ENT DIAGNOSTIC ENDOSCOPY (EXCLUDING LARYNGOSCOPY)                                                      491
+ENT003               ENT DIAGNOSTIC PROCEDURES (NON-ENDOSCOPIC)                                                             536
+ENT004               DIAGNOSTIC AUDIOLOGY                                                                                 14805
+ENT005               MYRINGOTOMY                                                                                            158
+ENT006               ENT DRAINAGE (EXCLUDING MYRINGOTOMY)                                                                  1129
+ENT007               TONSILECTOMY AND ADENOIDECTOMY                                                                         899
+ENT008               NASAL AND SINUS EXCISION                                                                               319
+ENT009               TONGUE EXCISION                                                                                        310
+ENT010               SALIVARY GLAND EXCISION                                                                                267
+ENT011               LARYNGECTOMY                                                                                           301
+ENT012               ENT EXCISION (EXCLUDING NASAL PASSAGE, SINUSES, TONGUE, SALIVARY GLANDS, LARYNX)                       282
+ENT013               ENT REPAIR                                                                                             857
+ENT014               FRENECTOMY                                                                                             528
+ENT015               DENTAL PROCEDURES                                                                                      595
+ENT017               ENT PROCEDURES, NEC                                                                                    554
+ESA001               HEMODIALYSIS                                                                                         21858
+ESA002               EXTRACORPOREAL MEMBRANE OXYGENATION                                                                    625
+ESA003               MECHANICAL VENTILATION                                                                               23327
+ESA004               NON-INVASIVE VENTILATION                                                                             47609
+ESA005               CARDIAC CHEST COMPRESSION                                                                              999
+ESA006               CARDIOVERSION                                                                                         4540
+ESA007               CARDIAC PACING                                                                                         211
+ESA008               OPEN HEART CARDIOPULMONARY BYPASS                                                                       73
+ESA009               CARDIAC ASSISTANCE WITH BALLOON PUMP                                                                   907
+ESA010               CARDIAC ASSISTANCE WITH VENTRICULAR ASSIST DEVICE                                                       96
+ESA011               HYPERBARIC OXYGEN THERAPY                                                                               51
+EST001               PHERESIS THERAPY                                                                                       500
+EST002               PHOTOTHERAPY                                                                                          7797
+EST003               ULTRAVIOLET LIGHT THERAPY                                                                              834
+EST004               HYPOTHERMIA THERAPY                                                                                     39
+EST005               EXTRACORPOREAL OR SYSTEMIC THERAPIES, NEC                                                               31
+EYP001               EYE PROCEDURES                                                                                         768
+EYP002               EYELID PROCEDURES                                                                                      244
+FRS001               HYSTERECTOMY                                                                                          6486
+FRS002               OOPHORECTOMY                                                                                           955
+FRS003               SALPINGECTOMY                                                                                          937
+FRS004               TRACHELECTOMY                                                                                           15
+FRS005               FALLOPIAN TUBE LIGATION AND EXCISION                                                                   282
+FRS006               VULVAR LACERATION REPAIR                                                                               417
+FRS007               FEMALE GENITAL TRACT REPAIR (EXCLUDING VULVA)                                                          423
+FRS008               CERVICAL DILATION                                                                                      307
+FRS009               CERVICAL CERCLAGE                                                                                      435
+FRS010               FEMALE UPPER GENITAL TRACT EXCISION                                                                   2854
+FRS011               FEMALE LOWER GENITAL TRACT EXCISION                                                                    196
+FRS012               INTRAUTERINE DEVICE (IUD) INSERTION                                                                     72
+FRS013               SUBCUTANEOUS CONTRACEPTIVE IMPLANT                                                                      32
+FRS015               FEMALE REPRODUCTIVE SYSTEM PROCEDURES, NEC                                                            1973
+GIS001               ESOPHAGOGASTRODUODENOSCOPY (EGD) WITH BIOPSY                                                         17083
+GIS002               COLONOSCOPY AND PROCTOSCOPY WITH BIOPSY                                                               5091
+GIS003               GI SYSTEM BIOPSY (NON-ENDOSCOPIC)                                                                      668
+GIS004               GI SYSTEM ENDOSCOPY WITHOUT BIOPSY (DIAGNOSTIC)                                                      12374
+GIS005               EXPLORATION OF PERITONEAL CAVITY                                                                      1319
+GIS006               PARACENTESIS                                                                                         12567
+GIS007               GI SYSTEM DRAINAGE (EXCLUDING PARACENTESIS)                                                           6314
+GIS008               APPENDECTOMY                                                                                         10416
+GIS009               COLECTOMY                                                                                            11978
+GIS010               GASTRECTOMY                                                                                          16799
+GIS011               SMALL BOWEL RESECTION                                                                                 4491
+GIS012               DUODENAL RESECTION                                                                                     137
+GIS013               PROCTECTOMY OR ANAL RESECTION                                                                         1017
+GIS014               ESOPHAGECTOMY                                                                                          193
+GIS015               OMENTECTOMY OR PERITONEUM RESECTION                                                                    454
+GIS016               GI SYSTEM ENDOSCOPIC THERAPEUTIC PROCEDURES                                                           2076
+GIS017               GASTROSTOMY                                                                                           5816
+GIS018               ILEOSTOMY AND COLOSTOMY                                                                               2550
+GIS019               GASTRO-JEJUNAL BYPASS (INCLUDING BARIATRIC)                                                           5879
+GIS020               ANORECTAL REPAIR (3RD AND 4TH DEGREE OBSTETRICAL REPAIRS AND OTHER)                                    760
+GIS021               GI SYSTEM REPAIR (EXCLUDING ANORECTAL)                                                                2050
+GIS022               GI SYSTEM LYSIS OF ADHESIONS                                                                          3125
+GIS023               GI TRANSPLANT                                                                                            9
+GIS024               OTHER PERITONEAL CAVITY PROCEDURES                                                                    1157
+GIS025               OTHER GI SYSTEM DEVICE PROCEDURES                                                                     2645
+GIS026               UPPER GI THERAPEUTIC PROCEDURES, NEC (OPEN AND LAPAROSCOPIC)                                          1741
+GIS027               UPPER GI THERAPEUTIC PROCEDURES, NEC (ENDOSCOPIC)                                                     3147
+GIS028               LOWER GI THERAPEUTIC PROCEDURES, NEC (OPEN AND LAPAROSCOPIC)                                           682
+GIS029               LOWER GI THERAPEUTIC PROCEDURES, NEC (EXCLUDING OPEN AND LAPAROSCOPIC)                                 657
+GNR001               COSMETIC PROCEDURES                                                                                    330
+GNR002               ABDOMINAL WALL REPAIR (INCLUDING HERNIA)                                                              4089
+GNR003               INGUINAL AND FEMORAL HERNIA REPAIR                                                                    1897
+GNR004               ENDOSCOPIC CONTROL OF BLEEDING                                                                        4633
+GNR005               CONTROL OF BLEEDING (NON-ENDOSCOPIC)                                                                   386
+GNR006               CHEST WALL PROCEDURES, NEC                                                                             334
+GNR007               MEDIASTINAL PROCEDURES, NEC                                                                            416
+GNR008               ABDOMINAL WALL PROCEDURES, NEC                                                                        1368
+GNR009               RETROPERITONEAL PROCEDURES, NEC                                                                        772
+GNR010               GENITOURINARY TRACT PROCEDURES, NEC                                                                     26
+HEP001               LIVER BIOPSY                                                                                          2290
+HEP002               PANCREATICOBILIARY BIOPSY                                                                              149
+HEP003               DIAGNOSTIC ERCP WITH OR WITHOUT BIOPSY                                                                1005
+HEP004               HEPATOBILIARY RESECTION AND ABLATION                                                                  1241
+HEP005               PANCREATECTOMY                                                                                        1462
+HEP006               CHOLECYSTECTOMY                                                                                      14874
+HEP007               BILIARY AND PANCREATIC CALCULUS REMOVAL                                                               2307
+HEP008               COMMON BILE DUCT SPHINCTEROTOMY AND STENTING                                                          2554
+HEP009               PANCREATIC AND PROXIMAL BILIARY DILATION AND STENTING                                                  514
+HEP010               HEPATOBILIARY AND PANCREATIC DRAINAGE                                                                 4098
+HEP011               LIVER TRANSPLANT                                                                                       659
+HEP012               PANCREAS TRANSPLANT                                                                                     30
+HEP013               HEPATOBILIARY AND PANCREATIC PROCEDURES, NEC                                                           275
+IMG001               CARDIAC AND CORONARY FLUOROSCOPY                                                                      4815
+IMG002               FLUOROSCOPIC ANGIOGRAPHY (EXCLUDING CORONARY)                                                         2856
+IMG003               FLUOROSCOPIC GUIDANCE FOR CIRCULATORY SYSTEM PROCEDURES                                                293
+IMG004               FLUOROSCOPY OF NON-CIRCULATORY ORGANS                                                                 1247
+IMG005               MAGNETIC RESONANCE IMAGING (MRI)                                                                      2836
+IMG006               COMPUTERIZED TOMOGRAPHY (CT) WITH CONTRAST                                                            6523
+IMG007               COMPUTERIZED TOMOGRAPHY (CT) WITHOUT CONTRAST                                                         5553
+IMG008               ULTRASONOGRAPHY                                                                                      25993
+IMG009               PLAIN RADIOGRAPHY                                                                                     1107
+IMG010               FLUORESCENCE IMAGING                                                                                     8
+LYM001               LYMPH NODE BIOPSY                                                                                     2952
+LYM002               LYMPH NODE EXCISION (THERAPEUTIC)                                                                      344
+LYM003               LYMPH NODE DISSECTION                                                                                 1052
+LYM004               THYMECTOMY                                                                                             339
+LYM005               SPLENECTOMY                                                                                            330
+LYM006               SPLEEN PROCEDURES (EXCLUDING SPLENECTOMY)                                                               76
+LYM007               BONE MARROW BIOPSY                                                                                    2537
+LYM008               BONE MARROW ASPIRATION (THERAPEUTIC)                                                                   169
+LYM011               LYMPHATIC PROCEDURES, NEC                                                                               49
+MAM001               ARTERIAL OXYGEN SATURATION MONITORING                                                                  413
+MAM002               PERIPHERAL ARTERIAL PRESSURE MONITORING                                                                218
+MAM003               PULMONARY ARTERIAL PRESSURE MONITORING                                                                  27
+MAM004               CARDIAC STRESS TESTS                                                                                  1118
+MAM005               MEASUREMENT DURING CARDIAC CATHETERIZATION                                                           23201
+MAM006               PACEMAKER AND DEFIBRILLATOR INTERROGATION                                                             3991
+MAM007               ELECTROCARDIOGRAM (ECG)                                                                               2908
+MAM008               CARDIAC MONITORING                                                                                    2084
+MAM009               ELECTROPHYSIOLOGIC STUDIES                                                                             451
+MAM010               OTHER CARDIOVASCULAR SYSTEM MEASUREMENT AND MONITORING                                                6123
+MAM011               ELECTROENCEPHALOGRAM (EEG)                                                                           20800
+MAM012               ICP AND OTHER CNS MONITORING (EXCLUDING EEG)                                                            95
+MAM013               MONITORING OF PERIPHERAL NERVES                                                                        160
+MAM014               PULMONARY FUNCTION TESTS                                                                               272
+MAM015               MEASUREMENT AND MONITORING, NEC                                                                        286
+MHT001               PHARMACOTHERAPY FOR MENTAL HEALTH (EXCLUDING SUBSTANCE USE)                                          15714
+MHT002               PSYCHOTHERAPY FOR MENTAL HEALTH (EXCLUDING SUBSTANCE USE)                                            18086
+MHT003               ELECTROCONVULSIVE THERAPY                                                                              836
+MHT004               CRISIS INTERVENTION FOR MENTAL HEALTH                                                                   12
+MHT005               MENTAL HEALTH PROCEDURES, NEC                                                                         3365
+MRS001               CIRCUMCISION                                                                                         39517
+MRS002               PENIS PROCEDURES (EXCLUDING CIRCUMCISION)                                                              499
+MRS003               PROSTATECTOMY                                                                                         3111
+MRS004               PROSTATE AND SEMINAL VESICLE PROCEDURES (EXCLUDING PROSTATECTOMY)                                     1804
+MRS005               MALE PERINEUM PROCEDURES                                                                               410
+MRS007               MALE REPRODUCTIVE SYSTEM PROCEDURES, NEC                                                               927
+MST001               ARTHROCENTESIS                                                                                        2667
+MST002               BONE AND JOINT BIOPSY                                                                                 2795
+MST003               SUBCUTANEOUS TISSUE, FASCIA, AND MUSCLE BIOPSY                                                        2433
+MST004               INCISION AND DRAINAGE OF MUSCULOSKELETAL TISSUE AND JOINTS                                            2502
+MST005               INCISION AND DRAINAGE OF SUBCUTANEOUS TISSUE AND FASCIA                                               4867
+MST006               KNEE ARTHROPLASTY                                                                                    21432
+MST007               HIP ARTHROPLASTY                                                                                     19929
+MST008               ARTHROPLASTY OF OTHER JOINT (EXCLUDING KNEE AND HIP)                                                  3258
+MST009               FIXATION OF UPPER EXTREMITY BONES                                                                     3922
+MST010               FEMUR FIXATION                                                                                       14229
+MST011               FIXATION OF LEG AND FOOT BONES                                                                        7387
+MST012               BONE FIXATION (EXCLUDING EXTREMITIES)                                                                 4068
+MST013               SPINE FUSION                                                                                         19983
+MST014               JOINT FUSION (EXCLUDING SPINE)                                                                        1162
+MST015               CLOSED REDUCTION OF BONES AND JOINTS                                                                  1858
+MST016               VERTEBRAL DISCECTOMY                                                                                  2321
+MST017               JOINT TISSUE EXCISION (EXCLUDING DISCECTOMY)                                                           924
+MST018               BONE EXCISION                                                                                         4294
+MST019               MUSCLE, TENDON, BURSA, AND LIGAMENT EXCISION                                                          2729
+MST020               SUBCUTANEOUS TISSUE AND FASCIA EXCISION                                                               8215
+MST021               PERINEAL MUSCLE LACERATION REPAIR (2ND DEGREE OBSTETRICAL AND OTHER)                                  2705
+MST022               TENDON, MUSCLE, BURSA, AND LIGAMENT REPAIR (EXCLUDING PERINEAL)                                       1168
+MST023               TOE AND MID FOOT AMPUTATION                                                                           5786
+MST024               BELOW KNEE AMPUTATION                                                                                 1720
+MST025               ABOVE KNEE AND OTHER PROXIMAL LOWER EXTREMITY AMPUTATION                                               991
+MST026               FINGER AND OTHER UPPER EXTREMITY AMPUTATION                                                            404
+MST028               SUBCUTANEOUS TISSUE AND FASCIA PROCEDURES, NEC                                                        6206
+MST029               MUSCULOSKELETAL DEVICE PROCEDURES, NEC                                                                1278
+MST030               MUSCULOSKELETAL PROCEDURES, NEC                                                                       1964
+NCM001               PLANAR NUCLEAR MEDICINE IMAGING                                                                        249
+NCM002               TOMOGRAPHIC NUCLEAR MEDICINE IMAGING                                                                    77
+NCM003               RADIONUCLIDE THERAPY AND NON-IMAGING PROCEDURES                                                         15
+NCM004               POSITRON EMISSION TOMOGRAPHIC (PET) IMAGING                                                             88
+OST001               OSTEOPATHIC TREATMENT                                                                                    8
+OTR001               ROBOTIC-ASSISTED PROCEDURES                                                                            238
+OTR002               COMPUTER-ASSISTED PROCEDURES                                                                            52
+OTR003               FLUORESCENCE-GUIDED PROCEDURES                                                                           4
+OTR004               ISOLATION PROCEDURES                                                                                 45238
+OTR005               THERAPEUTIC MASSAGE AND RELATED PROCEDURES                                                               8
+PGN001               FETAL HEART RATE MONITORING                                                                           4499
+PGN002               SPONTANEOUS VAGINAL DELIVERY                                                                        115679
+PGN003               CESAREAN SECTION                                                                                     66712
+PGN004               ASSISTED VAGINAL DELIVERY                                                                             7022
+PGN005               EPISIOTOMY                                                                                             243
+PGN006               REMOVAL OF PLACENTA AND OTHER RETAINED PRODUCTS OF CONCEPTION                                         1379
+PGN007               REMOVAL OF ECTOPIC PREGNANCY                                                                           636
+PGN008               ABORTION                                                                                               411
+PGN009               PREGNANCY AND FETAL PROCEDURES, NEC                                                                    143
+PLC001               IMMOBILIZATION BY SPLINT OR OTHER EXTERNAL DEVICE                                                     1703
+PLC002               PACKING AND DRESSING PROCEDURES                                                                        747
+PNS001               LUMBOSACRAL NERVE DECOMPRESSION                                                                       2052
+PNS002               CERVICOTHORACIC NERVE DECOMPRESSION                                                                    222
+PNS003               PERIPHERAL NERVE DECOMPRESSION (EXCLUDING LUMBOSACRAL AND CERVICOTHORACIC)                             184
+PNS004               NERVE REPAIR                                                                                            75
+PNS005               PERIPHERAL NERVE DENERVATION                                                                           126
+PNS006               PERIPHERAL NERVE PROCEDURES, NEC                                                                        56
+RAD001               BEAM RADIATION                                                                                         837
+RAD002               BRACHYTHERAPY                                                                                          108
+RAD003               STEREOTACTIC RADIOSURGERY                                                                               65
+RAD004               RADIATION THERAPY, NEC                                                                                 193
+RES001               BRONCHOSCOPY (DIAGNOSTIC)                                                                             3083
+RES002               LUNG, PLEURA, OR DIAPHRAGM BIOPSY (NON-ENDOSCOPIC)                                                    2354
+RES003               THORACENTESIS (DIAGNOSTIC)                                                                            1450
+RES004               BRONCHOSCOPY (THERAPEUTIC)                                                                             576
+RES005               CHEST TUBE PLACEMENT AND THERAPEUTIC THORACENTESIS                                                   11557
+RES006               OPEN AND THORACOSCOPIC PLEURAL DRAINAGE                                                                578
+RES007               AIRWAY INTUBATION                                                                                    10816
+RES008               LUNG, PLEURA, OR DIAPHRAGM RESECTION (OPEN AND THORACOSCOPIC)                                         5976
+RES009               BRONCHOSCOPIC EXCISION AND FULGURATION                                                                 334
+RES010               TRACHEOSTOMY                                                                                          4062
+RES011               DIAPHRAGMATIC HERNIA REPAIR                                                                           1546
+RES012               RELEASE OF LUNG AND PLEURA                                                                             699
+RES013               LUNG TRANSPLANT                                                                                        196
+RES014               RESPIRATORY SYSTEM PROCEDURES, NEC                                                                     771
+RHB001               PHYSICAL, OCCUPATIONAL, AND RESPIRATORY THERAPY EVALUATION                                             721
+RHB002               PHYSICAL, OCCUPATIONAL, AND RESPIRATORY THERAPY TREATMENT                                            11503
+RHB003               SPEECH THERAPY EVALUATION                                                                              171
+RHB004               SPEECH THERAPY TREATMENT                                                                                78
+SKB001               SKIN BIOPSY AND DIAGNOSTIC DRAINAGE                                                                   1616
+SKB002               INCISION AND DRAINAGE OF SKIN                                                                         2082
+SKB003               MASTECTOMY AND LUMPECTOMY                                                                             2224
+SKB004               BREAST RECONSTRUCTION                                                                                 1014
+SKB005               PERINEAL SKIN REPAIR (1ST DEGREE OBSTETRICAL AND OTHER)                                               1899
+SKB006               SKIN LACERATION REPAIR (EXCLUDING PERINEUM)                                                           4997
+SKB007               SKIN GRAFT                                                                                            1734
+SKB008               SKIN EXCISION AND DEBRIDEMENT                                                                         2053
+SKB009               NAIL PROCEDURES                                                                                       1164
+SKB010               SKIN AND BREAST PROCEDURES, NEC                                                                        264
+SUD001               SUBSTANCE USE DETOXIFICATION                                                                         25355
+SUD002               PHARMACOTHERAPY FOR SUBSTANCE USE                                                                     3005
+SUD003               PSYCHOTHERAPY FOR SUBSTANCE USE                                                                        431
+SUD004               COUNSELING FOR SUBSTANCE USE                                                                          9435
+URN001               CYSTOSCOPY AND URETEROSCOPY (INCLUDING BIOPSY)                                                         857
+URN002               KIDNEY AND OTHER URINARY TRACT BIOPSY (NON-ENDOSCOPIC)                                                1465
+URN003               URETER AND OTHER URINARY TRACT DILATION                                                               8577
+URN004               REMOVAL OF CALCULI AND OTHER MATTER FROM URINARY TRACT                                                2530
+URN005               NEPHROSTOMY AND URETEROSTOMY PROCEDURES (INCLUDING STENTS)                                            4588
+URN006               BLADDER CATHETERIZATION AND DRAINAGE                                                                  7153
+URN007               URINARY TRACT REPAIR                                                                                   472
+URN008               NEPHRECTOMY AND URETERECTOMY                                                                          3792
+URN009               CYSTECTOMY (INCLUDING FULGURATION) AND URETHRECTOMY                                                   1913
+URN010               URINARY DIVERSION WITH ANASTOMOSIS OR OSTOMY                                                           261
+URN011               KIDNEY TRANSPLANT                                                                                     1826
+URN012               URINARY SYSTEM PROCEDURES, NEC                                                                         428
+Name: count, dtype: int64

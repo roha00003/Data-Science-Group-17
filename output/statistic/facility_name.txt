@@ -1,0 +1,208 @@
+Facility Name
+Mount Sinai Hospital                                                               50110
+North Shore University Hospital                                                    48720
+New York-Presbyterian Hospital - Columbia Presbyterian Center                      44167
+New York-Presbyterian Hospital - New York Weill Cornell Center                     43877
+NYU Langone Hospitals                                                              43482
+Strong Memorial Hospital                                                           39776
+Long Island Jewish Medical Center                                                  39232
+NYU Langone Hospital-Long Island                                                   35305
+Montefiore Medical Center - Henry & Lucy Moses Div                                 35093
+Stony Brook University Hospital                                                    34961
+Maimonides Medical Center                                                          34581
+Albany Medical Center Hospital                                                     34455
+Lenox Hill Hospital                                                                30206
+Staten Island University Hosp-North                                                29607
+New York - Presbyterian Brooklyn Methodist Hospital                                29155
+Bellevue Hospital Center                                                           27761
+New York - Presbyterian/Queens                                                     27590
+NYU Langone Hospital-Brooklyn                                                      27020
+Rochester General Hospital                                                         26823
+Good Samaritan Hospital Medical Center                                             25612
+BronxCare Hospital Center                                                          25434
+Montefiore Med Center - Jack D Weiler Hosp of A Einstein College Div               24448
+Westchester Medical Center                                                         23939
+St. Peter's Hospital                                                               23386
+South Shore University Hospital                                                    23307
+Mount Sinai West                                                                   22949
+Memorial Hospital for Cancer and Allied Diseases                                   22712
+Buffalo General Medical Center                                                     22429
+Vassar Brothers Medical Center                                                     22186
+White Plains Hospital Center                                                       21315
+Huntington Hospital                                                                20438
+Crouse Hospital                                                                    20300
+University Hospital SUNY Health Science Center                                     20154
+Jacobi Medical Center                                                              20095
+Garnet Health Medical Center                                                       20026
+Mount Sinai South Nassau                                                           19942
+Elmhurst Hospital Center                                                           19797
+St. Francis Hospital & Heart Center                                                19289
+Lincoln Medical & Mental Health Center                                             18477
+Cohen Children's Medical Center                                                    18114
+Highland Hospital                                                                  17686
+Good Samaritan Hospital of Suffern                                                 17585
+Millard Fillmore Suburban Hospital                                                 17546
+Kings County Hospital Center                                                       17446
+St. Joseph's Hospital Health Center                                                17263
+The Unity Hospital of Rochester                                                    16683
+Nassau University Medical Center                                                   16427
+Mercy Hospital of Buffalo                                                          16341
+Erie County Medical Center                                                         16161
+Mount Sinai Morningside                                                            15975
+Jamaica Hospital Medical Center                                                    15903
+Long Island Jewish Forest Hills                                                    14966
+Montefiore Medical Center-Wakefield Hospital                                       14790
+SBH Health System                                                                  13998
+Richmond University Medical Center                                                 13991
+John R. Oishei Children's Hospital                                                 13339
+Brookdale Hospital Medical Center                                                  13098
+Queens Hospital Center                                                             13047
+Coney Island Hospital                                                              12943
+New York Presbyterian Hospital - Allen Hospital                                    12630
+United Health Services Hospitals Inc. - Wilson Medical Center                      12578
+Flushing Hospital Medical Center                                                   12416
+Glens Falls Hospital                                                               11962
+Montefiore Nyack                                                                   11673
+Faxton-St Lukes Healthcare St Lukes Division                                       11635
+Mount Sinai Beth Israel                                                            11628
+New York - Presbyterian Hospital                                                   11528
+Wyckoff Heights Medical Center                                                     11490
+Hospital for Special Surgery                                                       11446
+Brooklyn Hospital Center - Downtown Campus                                         11381
+Mercy Hospital                                                                     11283
+Sisters of Charity Hospital                                                        11237
+Saratoga Hospital                                                                  10987
+Northern Westchester Hospital                                                      10727
+St Catherine of Siena Hospital                                                     10526
+Harlem Hospital Center                                                             10448
+St. Charles Hospital                                                               10226
+St Luke's Cornwall Hospital/Newburgh                                               10187
+Peconic Bay Medical Center                                                          9856
+Our Lady of Lourdes Memorial Hospital                                               9633
+Long Island Jewish Valley Stream                                                    9624
+Samaritan Medical Center                                                            9318
+Woodhull Medical & Mental Health Center                                             9289
+Samaritan Hospital                                                                  9215
+UPSTATE University Hospital at Community General                                    8874
+New York-Presbyterian/Lower Manhattan Hospital                                      8859
+Mount Sinai Hospital - Mount Sinai Hospital of Queens                               8809
+Ellis Hospital                                                                      8781
+Mary Imogene Bassett Hospital                                                       8772
+John T Mather Memorial Hospital of Port Jefferson New York Inc                      8483
+Mount Sinai Brooklyn                                                                8100
+St Elizabeth Medical Center                                                         8041
+The University of Vermont Health Network - Champlain Valley Physicians Hospital     8034
+St Johns Episcopal Hospital So Shore                                                7823
+Long Island Community Hospital                                                      7796
+Arnot Ogden Medical Center                                                          7794
+Mid-Hudson Valley Division of Westchester Medical Center                            7793
+Metropolitan Hospital Center                                                        7760
+Plainview Hospital                                                                  7751
+SJRH - St Johns Division                                                            7605
+NewYork-Presbyterian/Hudson Valley Hospital                                         7566
+SJRH - Park Care Pavilion                                                           7361
+Phelps Hospital                                                                     7275
+Staten Island University Hospital Prince's Bay                                      7196
+University Hospital of Brooklyn                                                     7183
+North Central Bronx Hospital                                                        7079
+Northern Dutchess Hospital                                                          6220
+St. Joseph Hospital                                                                 6163
+Kenmore Mercy Hospital                                                              6068
+Cayuga Medical Center at Ithaca                                                     5967
+UPMC Chautauqua at WCA                                                              5839
+Montefiore New Rochelle Hospital                                                    5759
+F.F. Thompson Hospital                                                              5633
+Olean General Hospital                                                              5520
+HealthAlliance Hospital Broadway Campus                                             5443
+Redacted for Confidentiality                                                        5390
+Glen Cove Hospital                                                                  5358
+Interfaith Medical Center                                                           5263
+Roswell Park Cancer Institute                                                       5078
+Canton-Potsdam Hospital                                                             5027
+Newark-Wayne Community Hospital                                                     5021
+Auburn Community Hospital                                                           4707
+Stony Brook Southampton Hospital                                                    4597
+Corning Hospital                                                                    4521
+United Memorial Medical Center North Street Campus                                  4520
+Mount St. Mary's Hospital and Health Center                                         4520
+NYU Langone Orthopedic Hospital                                                     4411
+Syosset Hospital                                                                    3923
+Rome Memorial Hospital, Inc                                                         3796
+Garnet Health Medical Center - Catskills                                            3781
+Ellis Hospital - Bellevue Woman's Care Center Division                              3754
+Guthrie Cortland Medical Center                                                     3713
+Niagara Falls Memorial Medical Center                                               3683
+Putnam Hospital                                                                     3572
+Oswego Hospital                                                                     3566
+New York-Presbyterian Westchester Behavioral Health Center                          3484
+St. Mary's Healthcare                                                               3054
+United Health Services Hospitals Inc. - Binghamton General Hospital                 3051
+Bon Secours Community Hospital                                                      2995
+Clifton Springs Hospital and Clinic                                                 2937
+Columbia Memorial Hospital                                                          2898
+St. Joseph's Medical Center                                                         2810
+Oneida Health Hospital                                                              2756
+Winifred Masterson Burke Rehabilitation Hospital                                    2679
+Geneva General Hospital                                                             2629
+Claxton-Hepburn Medical Center                                                      2620
+New York Community Hospital of Brooklyn, Inc                                        2582
+St. Joseph's MC-St. Vincent's Westchester Division                                  2568
+Nathan Littauer Hospital                                                            2549
+Nicholas H. Noyes Memorial Hospital                                                 2254
+Adirondack Medical Center-Saranac Lake Site                                         2235
+Wyoming County Community Hospital                                                   2145
+St Anthony Community Hospital                                                       2097
+Sunnyview Hospital and Rehabilitation Center                                        2006
+Calvary Hospital Inc                                                                1967
+Memorial Hosp of Wm F & Gertrude F Jones A/K/A Jones Memorial Hosp                  1892
+Montefiore Mount Vernon Hospital                                                    1728
+Stony Brook Eastern Long Island Hospital                                            1538
+Helen Hayes Hospital                                                                1517
+Massena Hospital                                                                    1340
+Brooks-TLC Hospital System, Inc.                                                    1277
+Chenango Memorial Hospital Inc                                                      1217
+Lakeview Center for Mental Health and Wellness                                      1191
+Carthage Area Hospital Inc                                                          1183
+Kingsbrook Jewish Medical Center                                                    1138
+A.O. Fox Memorial Hospital                                                          1126
+Sisters of Charity Hospital - St. Joseph Campus                                     1061
+Community Memorial Hospital Inc                                                     1044
+David H. Koch Center For Cancer Care                                                1043
+St. James Hospital                                                                   904
+St. Joseph's Hospital                                                                894
+The University of Vermont Health Network - Alice Hyde Medical Center                 825
+Lewis County General Hospital                                                        795
+Bertrand Chaffee Hospital                                                            723
+Eastern Niagara Hospital - Lockport Division                                         713
+Little Falls Hospital                                                                584
+The University of Vermont Health Network - Elizabethtown Community Hospital          563
+Henry J. Carter Specialty Hospital                                                   512
+Gouverneur Hospital                                                                  493
+St. Peter's Addiction Recovery Center                                                491
+Crouse Hospital - Commonwealth Division                                              426
+Blythedale Children's Hospital                                                       413
+Cobleskill Regional Hospital                                                         400
+United Memorial Medical Center Bank Street Campus                                    379
+SJRH - Dobbs Ferry Pavillion                                                         379
+Unity Specialty Hospital                                                             322
+New York Eye and Ear Infirmary of Mount Sinai                                        319
+Soldiers and Sailors Memorial Hospital of Yates County                               288
+Calvary Hospital                                                                     283
+Schuyler Hospital                                                                    283
+HealthAlliance Hospital Mary's Avenue Campus                                         266
+Samaritan Hospital - St. Mary's Campus                                               257
+Medina Memorial Hospital                                                             248
+Westfield Memorial Hospital Inc                                                      156
+Ira Davenport Memorial Hospital                                                      148
+Delaware Valley Hospital Inc                                                         143
+St. Mary's Healthcare - Amsterdam Memorial Campus                                    126
+O'Connor Hospital                                                                    119
+River Hospital, Inc.                                                                 118
+Ellenville Regional Hospital                                                          95
+Margaretville Hospital                                                                95
+Garnet Health Medical Center - Catskills - G. Hermann Site                            82
+Clifton-Fine Hospital                                                                 45
+Albany Medical Center - South Clinical Campus                                          2
+Cuba Memorial Hospital Inc                                                             2
+New York-Presbyterian David H. Koch Center                                             2
+Name: count, dtype: int64

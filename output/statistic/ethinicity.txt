@@ -1,0 +1,6 @@
+Ethnicity
+Not Span/Hispanic    1531763
+Spanish/Hispanic      326453
+Unknown               240277
+Multi-ethnic            4940
+Name: count, dtype: int64

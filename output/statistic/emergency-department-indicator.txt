@@ -1,0 +1,4 @@
+Emergency Department Indicator
+Y    1337271
+N     766162
+Name: count, dtype: int64

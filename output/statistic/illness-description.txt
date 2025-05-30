@@ -1,0 +1,6 @@
+APR Severity of Illness Code  APR Severity of Illness Description
+1                             Minor                                  625731
+2                             Moderate                               757732
+3                             Major                                  504106
+4                             Extreme                                215228
+Name: count, dtype: int64

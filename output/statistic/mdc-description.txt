@@ -1,0 +1,28 @@
+APR MDC Code  APR MDC Description                                                                     
+0             PRE MDC                                                                                        151
+1             DISEASES AND DISORDERS OF THE NERVOUS SYSTEM                                                146694
+2             DISEASES AND DISORDERS OF THE EYE                                                             3810
+3             DISEASES AND DISORDERS OF THE EAR, NOSE, MOUTH AND THROAT                                    25695
+4             DISEASES AND DISORDERS OF THE RESPIRATORY SYSTEM                                            199151
+5             DISEASES AND DISORDERS OF THE CIRCULATORY SYSTEM                                            259921
+6             DISEASES AND DISORDERS OF THE DIGESTIVE SYSTEM                                              160799
+7             DISEASES AND DISORDERS OF THE HEPATOBILIARY SYSTEM AND PANCREAS                              60368
+8             DISEASES AND DISORDERS OF THE MUSCULOSKELETAL SYSTEM AND CONNECTIVE TISSUE                  161781
+9             DISEASES AND DISORDERS OF THE SKIN, SUBCUTANEOUS TISSUE AND BREAST                           42671
+10            ENDOCRINE, NUTRITIONAL AND METABOLIC DISEASES AND DISORDERS                                  79107
+11            DISEASES AND DISORDERS OF THE KIDNEY AND URINARY TRACT                                       93618
+12            DISEASES AND DISORDERS OF THE MALE REPRODUCTIVE SYSTEM                                        8490
+13            DISEASES AND DISORDERS OF THE FEMALE REPRODUCTIVE SYSTEM                                     16920
+14            PREGNANCY, CHILDBIRTH AND THE PUERPERIUM                                                    221014
+15            NEWBORNS AND OTHER NEONATES WITH CONDITIONS ORIGINATING IN THE PERINATAL PERIOD             203874
+16            DISEASES AND DISORDERS OF THE BLOOD AND BLOOD FORMING ORGANS AND IMMUNOLOGICAL DISORDERS     28773
+17            MYELOPROLIFERATIVE DISEASES AND DISORDERS, AND POORLY DIFFERENTIATED NEOPLASM                20891
+18            INFECTIOUS AND PARASITIC DISEASES (SYSTEMIC OR UNSPECIFIED SITES)                           159258
+19            MENTAL DISEASES AND DISORDERS                                                                87323
+20            ALCOHOL/DRUG USE AND ALCOHOL/DRUG INDUCED ORGANIC MENTAL DISORDERS                           57754
+21            INJURIES, POISONINGS AND TOXIC EFFECTS OF DRUGS                                              26349
+22            BURNS                                                                                         1921
+23            FACTORS INFLUENCING HEALTH STATUS AND OTHER CONTACTS WITH HEALTH SERVICES                    25773
+24            HUMAN IMMUNODEFICIENCY VIRUS INFECTIONS                                                       5806
+25            MULTIPLE SIGNIFICANT TRAUMA                                                                   5521
+Name: count, dtype: int64

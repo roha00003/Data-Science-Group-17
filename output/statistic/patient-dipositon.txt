@@ -1,0 +1,21 @@
+Patient Disposition
+Home or Self Care                        1385615
+Home w/ Home Health Services              280877
+Skilled Nursing Home                      194779
+Expired                                    59406
+Left Against Medical Advice                59172
+Short-term Hospital                        35353
+Inpatient Rehabilitation Facility          34691
+Hospice - Home                             11700
+Psychiatric Hospital or Unit of Hosp        9963
+Hospice - Medical Facility                  9441
+Facility w/ Custodial/Supportive Care       6241
+Another Type Not Listed                     5063
+Court/Law Enforcement                       3613
+Medicare Cert Long Term Care Hospital       2356
+Cancer Center or Children's Hospital        1888
+Hosp Basd Medicare Approved Swing Bed       1814
+Medicaid Cert Nursing Facility               794
+Federal Health Care Facility                 499
+Critical Access Hospital                     168
+Name: count, dtype: int64

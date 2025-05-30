@@ -1,0 +1,10 @@
+Hospital Service Area
+New York City      950967
+Long Island        341279
+Hudson Valley      232654
+Western NY         140877
+Capital/Adirond    136235
+Central NY         134956
+Finger Lakes       134596
+Southern Tier       26479
+Name: count, dtype: int64

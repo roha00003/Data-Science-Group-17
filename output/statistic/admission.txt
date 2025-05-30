@@ -1,0 +1,8 @@
+Type of Admission
+Emergency        1394328
+Elective          356005
+Newborn           198913
+Urgent            145107
+Trauma              7312
+Not Available       1768
+Name: count, dtype: int64

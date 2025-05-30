@@ -1,0 +1,3 @@
+Discharge Year
+2022    2103433
+Name: count, dtype: int64
