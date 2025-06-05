@@ -1,0 +1,43 @@
+COMPREHENSIVE COST VARIATION ANALYSIS REPORT
+============================================================
+
+BASIC COST STATISTICS:
+------------------------------
+Total Records Analyzed: 2,103,433
+Mean Cost: $23,426.72
+Median Cost: $12,262.92
+Standard Deviation: $49,987.39
+Minimum Cost: $0.00
+Maximum Cost: $8,242,868.77
+
+COST DISTRIBUTION PERCENTILES:
+------------------------------
+10th Percentile: $3,298.08
+25th Percentile: $6,369.18
+50th Percentile: $12,262.92
+75th Percentile: $24,644.16
+90th Percentile: $47,888.78
+95th Percentile: $73,497.23
+99th Percentile: $186,326.39
+
+DATA QUALITY ASSESSMENT:
+------------------------------
+Total Rows in Dataset: 2,103,433
+Total Costs: 0 missing (0.0%)
+Total Charges: 0 missing (0.0%)
+Hospital Service Area: 5,390 missing (0.3%)
+APR DRG Description: 0 missing (0.0%)
+Age Group: 0 missing (0.0%)
+
+AVAILABLE DATA COLUMNS:
+------------------------------
+APR DRG Code, APR DRG Description, APR MDC Code, APR MDC Description, APR Medical Surgical Description, APR Risk of Mortality, APR Severity of Illness Code, APR Severity of Illness Description, Age Group, Birth Weight, CCSR Diagnosis Code, CCSR Diagnosis Description, CCSR Procedure Code, CCSR Procedure Description, Discharge Year, Emergency Department Indicator, Ethnicity, Facility Name, Gender, Hospital County, Hospital Service Area, Length of Stay, Operating Certificate Number, Patient Disposition, Payment Typology 1, Payment Typology 2, Payment Typology 3, Permanent Facility Id, Race, Total Charges, Total Charges_clean, Total Charges_clean_filtered, Total Costs, Total Costs_clean, Total Costs_clean_filtered, Type of Admission, Zip Code - 3 digits
+
+ANALYSIS COMPONENTS COMPLETED:
+FILES GENERATED:
+------------------------------
+• output/analysis/regional_analysis.txt
+• output/analysis/specialization_analysis.txt
+• output/analysis/demographics_analysis.txt
+• output/analysis/summary_report.txt
+• output/analysis/plots/ (visualization files)

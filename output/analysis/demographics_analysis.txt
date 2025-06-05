@@ -1,0 +1,11 @@
+1. Costs By Age Group:
+              count      mean    median       std
+Age Group                                        
+0 to 17      302312  14081.99   4266.74  54975.27
+18 to 29     185854  17112.34  10100.08  37873.42
+30 to 49     404692  20196.57  11180.52  45509.36
+50 to 69     566245  29184.14  15712.68  58260.01
+70 or Older  644330  26601.62  15850.26  44085.21
+
+ANOVA F-Statistic: 6410.0304, p-value: 0.0000
+Result: Significant age group differences (p < 0.05)
