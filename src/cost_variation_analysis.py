@@ -122,8 +122,6 @@ class CostVariationAnalyzer:
     
     def analyze_regional_variations(self):
        
-       
-    
         results = []
     
         # 1. Hospital Service Area Analysis
@@ -487,53 +485,49 @@ class CostVariationAnalyzer:
         return results
     
     def analyze_hospital_specializations(self):
-        
-      
-        
-       
-    
+
         results = []
-    
+
         # 1. APR-DRG Analysis (Diagnosis Related Groups)
         if 'APR DRG Description' in self.df.columns and 'Total Costs_clean' in self.df.columns:
             drg_data = self.df.dropna(subset=['APR DRG Description', 'Total Costs_clean'])
-        
+
             if len(drg_data) > 0:
                 drg_costs = drg_data.groupby('APR DRG Description')['Total Costs_clean'].agg([
                     'count', 'mean', 'median', 'std'
                 ]).round(2)
                 drg_costs = drg_costs[drg_costs['count'] >= 30]  # At least 30 cases
-            
+
                 results.append("1. Costs By Diagnosis Related Groups (Top 20, minimum 30 cases):")
                 drg_top = drg_costs.sort_values('mean', ascending=False).head(20)
                 results.append(str(drg_top))
                 results.append("")
-    
+
         # 2. Major Diagnostic Category (MDC) Analysis
         if 'APR MDC Description' in self.df.columns and 'Total Costs_clean' in self.df.columns:
             mdc_data = self.df.dropna(subset=['APR MDC Description', 'Total Costs_clean'])
-        
+
             if len(mdc_data) > 0:
                 mdc_costs = mdc_data.groupby('APR MDC Description')['Total Costs_clean'].agg([
                     'count', 'mean', 'median', 'std'
                 ]).round(2)
-            
+
                 results.append("2. Costs By Major Diagnostic Category:")
                 mdc_sorted = mdc_costs.sort_values('mean', ascending=False)
                 results.append(str(mdc_sorted))
                 results.append("")
-            
+
                 # Combined visualization 
                 try:
-                    # Create a single figure with multiple subplots
-                    fig = plt.figure(figsize=(20, 12))
-                    gs = fig.add_gridspec(2, 2, height_ratios=[1, 1], width_ratios=[1.2, 1])
-                
+               
+                    fig = plt.figure(figsize=(24, 18))  # Increased height
+                    gs = fig.add_gridspec(2, 1, height_ratios=[2, 1], hspace=0.4, top=0.92)  # Increased hspace and set top margin
+        
                     # Get top DRGs for plotting
                     top_drgs = drg_costs.sort_values('mean', ascending=False).head(15)
-                
+        
                     if len(top_drgs) > 0:
-                        # Top left: DRG horizontal bar chart
+                        # Top: DRG horizontal bar chart 
                         ax1 = fig.add_subplot(gs[0, 0])
                         y_pos = np.arange(len(top_drgs))
 
@@ -541,123 +535,129 @@ class CostVariationAnalyzer:
                         colors = plt.cm.plasma(np.linspace(0.2, 0.9, len(top_drgs)))
 
                         bars = ax1.barh(y_pos, top_drgs['mean'], 
-                                       color=colors, alpha=0.8, edgecolor='#2C3E50', linewidth=1)
+                                       color=colors, alpha=0.8, edgecolor='#2C3E50', linewidth=1.5)
 
-                        # Truncate long descriptions
+                   
                         labels = []
                         for desc in top_drgs.index:
-                            if len(desc) > 45:
+                            if len(desc) > 60:
                                 # truncation at word boundaries
                                 words = desc.split()
                                 truncated = []
                                 char_count = 0
                                 for word in words:
-                                    if char_count + len(word) + 1 <= 45:
+                                    if char_count + len(word) + 1 <= 60:
                                         truncated.append(word)
                                         char_count += len(word) + 1
                                     else:
                                         break
-                                labels.append(' '.join(truncated) + '...')
+                            
+                                if len(truncated) > 0:
+                                    labels.append(' '.join(truncated) + '...')
+                                else:
+                                    labels.append(desc[:60] + '...')
                             else:
                                 labels.append(desc)
 
                         ax1.set_yticks(y_pos)
-                        ax1.set_yticklabels(labels, fontsize=9)
-                        ax1.set_xlabel('Average Cost (USD)', fontsize=11, fontweight='bold')
-                        ax1.set_title('Top 15 Most Expensive DRG Categories', fontsize=14, fontweight='bold', pad=15)
+                        ax1.set_yticklabels(labels, fontsize=12, fontweight='normal')
+                        ax1.set_xlabel('Average Cost (USD)', fontsize=14, fontweight='bold')
+                        ax1.set_title('Top 15 Most Expensive DRG Categories', fontsize=18, fontweight='bold', pad=25)  # Increased pad
 
-                        # Format x-axis
+                        # Format x-axis with 
                         ax1.xaxis.set_major_formatter(plt.FuncFormatter(lambda x, p: f'${x:,.0f}'))
                         ax1.grid(True, axis='x', alpha=0.3, linestyle='--')
+                        ax1.tick_params(axis='x', labelsize=11)
 
-                        # Add value labels
+                        # Add value labels 
                         for i, bar in enumerate(bars):
                             width = bar.get_width()
                             if width > 0:
-                                ax1.text(width + max(top_drgs['mean']) * 0.02, 
+                                ax1.text(width + max(top_drgs['mean']) * 0.01, 
                                         bar.get_y() + bar.get_height()/2, 
                                         f'${width:,.0f}', ha='left', va='center', 
-                                        fontsize=9, fontweight='bold', color='#2C3E50')
+                                        fontsize=11, fontweight='bold', color='#2C3E50')
 
-                        # Top right: Case volume vs cost scatter
-                        ax2 = fig.add_subplot(gs[0, 1])
-                        ax2.scatter(top_drgs['count'], top_drgs['mean'], 
-                                   s=top_drgs['count']*2, c=colors, alpha=0.7, 
-                                   edgecolors='#2C3E50', linewidth=1)
-
-                        ax2.set_xlabel('Number of Cases', fontsize=11, fontweight='bold')
-                        ax2.set_ylabel('Average Cost (USD)', fontsize=11, fontweight='bold')
-                        ax2.set_title('Case Volume vs Average Cost\n(Bubble size = Volume)', 
-                                     fontsize=14, fontweight='bold', pad=15)
-
-                        ax2.yaxis.set_major_formatter(plt.FuncFormatter(lambda x, p: f'${x:,.0f}'))
-                        ax2.grid(True, alpha=0.3, linestyle='--')
-
-                        # Add trend line
-                        if len(top_drgs) > 3:
-                            z = np.polyfit(top_drgs['count'], top_drgs['mean'], 1)
-                            p = np.poly1d(z)
-                            x_trend = np.linspace(top_drgs['count'].min(), top_drgs['count'].max(), 100)
-                            ax2.plot(x_trend, p(x_trend), "--", color='#E74C3C', alpha=0.8, linewidth=2)
-
-                    # Bottom: MDC costs bar chart (spanning both columns)
-                    ax3 = fig.add_subplot(gs[1, :])
+                        # Invert y-axis so highest costs are at top
+                        ax1.invert_yaxis()
                 
+                    # Bottom: MDC costs bar chart 
+                    ax2 = fig.add_subplot(gs[1, 0])
+        
                     # Create bar chart for MDC
-                    bars_mdc = ax3.bar(range(len(mdc_sorted)), mdc_sorted['mean'], 
+                    bars_mdc = ax2.bar(range(len(mdc_sorted)), mdc_sorted['mean'], 
                                       color=plt.cm.Set2(np.linspace(0, 1, len(mdc_sorted))), 
                                       alpha=0.8, edgecolor='#2C3E50', linewidth=1)
-                
-                    ax3.set_title('Average Costs By Major Diagnostic Category', fontsize=14, fontweight='bold', pad=15)
-                    ax3.set_xlabel('MDC Category', fontsize=11, fontweight='bold')
-                    ax3.set_ylabel('Average Costs (USD)', fontsize=11, fontweight='bold')
-                
-                    # Rotate and truncate labels
-                    labels_mdc = [desc[:25] + '...' if len(desc) > 25 else desc 
-                                 for desc in mdc_sorted.index]
-                    ax3.set_xticks(range(len(mdc_sorted)))
-                    ax3.set_xticklabels(labels_mdc, rotation=45, ha='right', fontsize=9)
-                
+        
+                    ax2.set_title('Average Costs By Major Diagnostic Category', fontsize=16, fontweight='bold', pad=20)
+                    ax2.set_xlabel('MDC Category', fontsize=13, fontweight='bold')
+                    ax2.set_ylabel('Average Costs (USD)', fontsize=13, fontweight='bold')
+        
+                    # label handling for MDC
+                    labels_mdc = []
+                    for desc in mdc_sorted.index:
+                        if len(desc) > 35:
+                            # Try to break at meaningful points
+                            words = desc.split()
+                            if len(words) > 1:
+                                # Try to keep first few words that fit
+                                truncated = []
+                                char_count = 0
+                                for word in words:
+                                    if char_count + len(word) + 1 <= 35:
+                                        truncated.append(word)
+                                        char_count += len(word) + 1
+                                    else:
+                                        break
+                                if len(truncated) > 0:
+                                    labels_mdc.append(' '.join(truncated) + '...')
+                                else:
+                                    labels_mdc.append(desc[:35] + '...')
+                            else:
+                                labels_mdc.append(desc[:35] + '...')
+                        else:
+                            labels_mdc.append(desc)
+            
+                    ax2.set_xticks(range(len(mdc_sorted)))
+                    ax2.set_xticklabels(labels_mdc, rotation=45, ha='right', fontsize=11)
+        
                     # Format y-axis
-                    ax3.yaxis.set_major_formatter(plt.FuncFormatter(lambda x, p: f'${x:,.0f}'))
-                    ax3.grid(True, axis='y', alpha=0.3, linestyle='--')
-                
-                    # Add value labels on bars
+                    ax2.yaxis.set_major_formatter(plt.FuncFormatter(lambda x, p: f'${x:,.0f}'))
+                    ax2.grid(True, axis='y', alpha=0.3, linestyle='--')
+                    ax2.tick_params(axis='y', labelsize=11)
+        
+                    # Add value labels on bars 
                     for bar in bars_mdc:
                         height = bar.get_height()
                         if height > 0:
-                            ax3.text(bar.get_x() + bar.get_width()/2., height + max(mdc_sorted['mean']) * 0.01,
+                            ax2.text(bar.get_x() + bar.get_width()/2., height + max(mdc_sorted['mean']) * 0.02,
                                     f'${height:,.0f}', ha='center', va='bottom', 
-                                    fontsize=8, fontweight='bold', color='#2C3E50')
+                                    fontsize=10, fontweight='bold', color='#2C3E50')
 
-                    # Add overall title
-                    fig.suptitle('Hospital Specialization Cost Analysis', fontsize=18, fontweight='bold', y=0.98)
-                
+                    # Add overall title with better spacing
+                    fig.suptitle('Hospital Specialization Cost Analysis', fontsize=22, fontweight='bold', y=0.96)  # Moved down slightly
+        
                     plt.tight_layout()
-                    plt.subplots_adjust(top=0.93)  # Make room for suptitle
+                    # Remove the subplots_adjust since we're using gridspec parameters
                     plt.savefig('output/analysis/plots/hospital_specialization_cost_variations.png', 
                                dpi=300, bbox_inches='tight', facecolor='white')
-                   
+           
                     plt.close()
 
                 except Exception as e:
                     results.append(f"Visualization failed: {e}")
                     plt.close()
-    
+
         # Save results
         try:
             with open('output/analysis/specialization_analysis.txt', 'w', encoding='utf-8') as f:
                 f.write('\n'.join(results))
         except Exception as e:
             print(f"Error saving specialization analysis: {e}")
-    
+
         return results
     
     def analyze_patient_demographics(self):
-       
-       
-            
-        
         
         results = []
         
