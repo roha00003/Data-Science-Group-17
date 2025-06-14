@@ -7,6 +7,9 @@ def write_results(path,results):
     with open(path,"w") as f:
         f.write(results)
 
+def clean_costs(series):
+    return pd.to_numeric(series.astype(str).str.replace(",", ""), errors='coerce').dropna()
+
 #Check Hospital Service Area
 def count_clm(df,pos,output):
     # Get the first column (by position)
@@ -79,6 +82,8 @@ pd.set_option('display.max_rows', None)
 #read data
 df = pd.read_csv("data\Topic 4\Hospital_Inpatient_Discharges__SPARCS_De-Identified___2022_20250423.csv")
 #count_clm(df,30,"emergency-department-indicator")
-#count_rel_clm(df,22,23,"mdc-description")
+count_rel_clm(df,15,17,"Diagnose--Procedure-Description")
 #costs(df,32,"total-costs")
-plot_cost(df,32,"total-cost")
+#plot_cost(df,32,"total-cost")
+#column_names = df.columns.tolist()
+#print(column_names)
