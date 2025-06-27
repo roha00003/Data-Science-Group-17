@@ -3,7 +3,7 @@ import joblib
 import os
 import numpy as np
 
-# 🔧 Einstellungen
+# 🔧 Einstellung
 INPUT_CSV = "/Users/robin/CodeProjects/Data-Science/data/test_data.csv"
 OVERVIEW_CSV = "../saved_models/model_overview.csv"
 CAT_FEATURES = ['CCSR Procedure Code', 'Age Group', 'Gender', 'Race', 'Ethnicity']
