@@ -79,6 +79,22 @@ export function DiagnosisForm() {
   const [isLoading, setIsLoading] = React.useState(false)
   const [openDiagnosis, setOpenDiagnosis] = React.useState(false)
   const [hasSelectedTreatment, setHasSelectedTreatment] = React.useState(false)
+  const [diagnoses, setDiagnoses] = React.useState<string[]>([])
+
+  // Load diagnosis data from public txt file
+  React.useEffect(() => {
+    fetch('/diagnosen_beschreibung.txt')
+        .then(res => res.text())
+        .then(data => {
+          const diagData = data
+              .split('\n')
+              .map((line) => line.split('\n')
+                .filter((item) => item.trim() !== "")) // Filter out empty lines
+          setDiagnoses(diagData)
+        })
+        .catch(err => console.error(err))
+  }, [])
+
 
   // Load data from localStorage on mount
   React.useEffect(() => {
