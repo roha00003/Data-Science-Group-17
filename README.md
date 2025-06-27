@@ -1,3 +1,3 @@
 # Data-Science-Group-17
 
-einfach die dummy datei in daten mit der richtigen datei ersetzen
+Um das Backend zu starten python -m uvicorn src.backend_api:app --reload
