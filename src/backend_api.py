@@ -29,11 +29,11 @@ for _, row in overview_df.iterrows():
 
 class PatientInput(BaseModel):
     Diagnosis_Code: str
-    Type_of_Admission: str
     Age_Group: str
     Gender: str
     Race: str
     Ethnicity: str
+    Type_of_Admission: str
 
 
 @app.post("/predict")
