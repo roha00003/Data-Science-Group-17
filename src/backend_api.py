@@ -32,15 +32,16 @@ class PatientInput(BaseModel):
 
 @app.post("/predict")
 async def predict(data: PatientInput):
+
     row = {
-        'CCSR Procedure Code': data.CCSR_Procedure_Code,
+        'CCSR Procedure Code': data.CCSR_Procedure_Code.split('(')[-1].replace(')', '').strip(),
         'Age Group': data.Age_Group,
         'Gender': data.Gender,
         'Race': data.Race,
         'Ethnicity': data.Ethnicity
     }
 
-    if row.get('CCSR Procedure Code') == "Pneumonia":
+    if row.get('CCSR Procedure Code') == "BLD004":
         return {
             "total_costs": 1000.0,
             "length_of_stay": 5.0,
