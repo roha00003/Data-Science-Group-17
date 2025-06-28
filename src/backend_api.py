@@ -99,8 +99,8 @@ async def predict(data: PatientInput):
 
         result.append({
         "procedure_code": code,
-        "total_costs": float(pred[0][0]),
-        "length_of_stay": float(pred[0][1]),
+        "total_costs": round(float(pred[0][0]), 2),
+        "length_of_stay": round(float(pred[0][1]),2),
         "mortality": mortality_encoder.inverse_transform([int(round(pred[0, 2]))])[0]
         })
 
