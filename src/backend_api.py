@@ -98,8 +98,31 @@ async def predict(data: PatientInput):
         result.append({
         "total_costs": float(pred[0][0]),
         "length_of_stay": float(pred[0][1]),
-        "mortality": mortality_encoder.inverse_transform([int(pred[0, 2])])[0]
+        "mortality": mortality_encoder.inverse_transform([int(round(pred[0, 2]))])[0]
         })
 
-    print(result)
+    # now sort the result by total costs on descending order
+    number_of_results = 3
+
+    result.sort(key=lambda x: x['total_costs'], reverse=True)
+    result = result[:number_of_results]
+
+    def mortality_to_number(mortality):
+        if mortality == 'Minor':
+            return 1
+        elif mortality == 'Moderate':
+            return 2
+        elif mortality == 'Major':
+            return 3
+        elif mortality == 'Extreme':
+            return 4
+        else:
+            return 0
+
+    # now sort according to mortality
+    result.sort(key=lambda x: mortality_to_number(x['mortality']), reverse=True)
+
+    # now sort according to length of stay
+    result.sort(key=lambda x: x['length_of_stay'], reverse=True)
+
     return result
