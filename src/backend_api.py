@@ -98,6 +98,7 @@ async def predict(data: PatientInput):
         pred = model.predict(input_encoded_df).reshape(1, -1)
 
         result.append({
+        "procedure_code": code,
         "total_costs": float(pred[0][0]),
         "length_of_stay": float(pred[0][1]),
         "mortality": mortality_encoder.inverse_transform([int(round(pred[0, 2]))])[0]
