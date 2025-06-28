@@ -4,13 +4,18 @@ from pydantic import BaseModel
 import pandas as pd
 import joblib
 import os
+import pickle
 import numpy as np
 
 app = FastAPI()
 
 # Add type_of_admission here
-CAT_FEATURES = ['CCSR Procedure Code', 'Age Group', 'Gender', 'Race', 'Ethnicity']
+FEATURES = ['CCSR Procedure Code', 'Age Group', 'Gender', 'Race', 'Ethnicity']
 OVERVIEW_CSV = "saved_models/model_overview.csv"
+ROOT_PATH = os.getcwd()
+
+with open(ROOT_PATH + "/data/diagnosis_to_procedure_dict.pkl", "rb") as file:
+    diagnosis_to_procedure_dict = pickle.load(file)
 
 # Load model overview
 overview_df = pd.read_csv(OVERVIEW_CSV, dtype=str)
@@ -34,43 +39,60 @@ class PatientInput(BaseModel):
 async def predict(data: PatientInput):
 
     row = {
-        'CCSR Procedure Code': data.CCSR_Procedure_Code.split('(')[-1].replace(')', '').strip(),
+        'CCSR DIagnosis Code': data.CCSR_Procedure_Code.split('(')[-1].replace(')', '').strip(),
         'Age Group': data.Age_Group,
         'Gender': data.Gender,
         'Race': data.Race,
         'Ethnicity': data.Ethnicity
     }
 
-    if row.get('CCSR Procedure Code') == "BLD004":
+    if row.get('CCSR Diagnosis Code') == "BLD004":
         return {
             "total_costs": 1000.0,
             "length_of_stay": 5.0,
             "mortality": 11
         }
 
-    present_features = [feat for feat in CAT_FEATURES if row[feat] != ""]
-    model_features = frozenset(present_features)
-    model_path = model_dict.get(model_features)
+    result = []
+    procedure_codes = diagnosis_to_procedure_dict.get(row['CCSR Diagnosis Code'], [])
 
-    if not model_path or not os.path.exists(model_path):
-        return {"error": "Model not found for these features"}
+    for code in procedure_codes:
 
-    bundle = joblib.load(model_path)
-    model = bundle["model"]
-    encoder = bundle["encoder"]
-    mortality_encoder = bundle["mortality_encoder"]
+        data = {
+            'CCSR DIagnosis Code': code,
+            'Age Group': row['Age Group'],
+            'Gender': row['Gender'],
+            'Race': row['Race'],
+            'Ethnicity': row['Ethnicity']
+        }
 
-    input_row_df = pd.DataFrame([row])
-    encoder_input_features = encoder.feature_names_in_
-    input_row_df = input_row_df[[col for col in encoder_input_features if col in input_row_df.columns]]
+        present_features = [feat for feat in FEATURES if data[feat] != ""]
+        model_features = frozenset(present_features)
+        model_path = ROOT_PATH + model_dict.get(model_features)
 
-    input_encoded_arr = encoder.transform(input_row_df)
-    input_encoded_df = pd.DataFrame(input_encoded_arr, columns=encoder.get_feature_names_out())
+        # für Lukas
+        model_path = model_path.replace("..", "")
 
-    pred = model.predict(input_encoded_df).reshape(1, -1)
+        if not model_path or not os.path.exists(model_path):
+            return {"error": "Model not found for these features"}
 
-    return {
+        bundle = joblib.load(model_path)
+        model = bundle["model"]
+        encoder = bundle["encoder"]
+        mortality_encoder = bundle["mortality_encoder"]
+
+        input_row_df = pd.DataFrame([row])
+        encoder_input_features = encoder.feature_names_in_
+        input_row_df = input_row_df[[col for col in encoder_input_features if col in input_row_df.columns]]
+
+        input_encoded_arr = encoder.transform(input_row_df)
+        input_encoded_df = pd.DataFrame(input_encoded_arr, columns=encoder.get_feature_names_out())
+
+        pred = model.predict(input_encoded_df).reshape(1, -1)
+
+        result.append({
         "total_costs": float(pred[0][0]),
         "length_of_stay": float(pred[0][1]),
         "mortality": mortality_encoder.inverse_transform([int(pred[0, 3])])[0]
-    }
+        })
+    return result
