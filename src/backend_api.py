@@ -11,7 +11,7 @@ app = FastAPI()
 
 # Add type_of_admission here
 FEATURES = ['CCSR Procedure Code', 'Age Group', 'Gender', 'Race', 'Ethnicity']
-OVERVIEW_CSV = "saved_models/model_overview.csv"
+OVERVIEW_CSV = "saved_models_filtered_rf/model_overview.csv"
 ROOT_PATH = os.getcwd()
 
 with open(ROOT_PATH + "/data/diagnosis_to_procedure_dict.pkl", "rb") as file:
@@ -29,6 +29,7 @@ for _, row in overview_df.iterrows():
 
 class PatientInput(BaseModel):
     Diagnosis_Code: str
+    Type_of_Admission: str
     Age_Group: str
     Gender: str
     Race: str
@@ -40,6 +41,7 @@ async def predict(data: PatientInput):
 
     row = {
         'CCSR Diagnosis Code': data.Diagnosis_Code.split('(')[-1].replace(')', '').strip(),
+        'Type of Admission': data.Type_of_Admission,
         'Age Group': data.Age_Group,
         'Gender': data.Gender,
         'Race': data.Race,
@@ -63,7 +65,8 @@ async def predict(data: PatientInput):
             'Age Group': row['Age Group'],
             'Gender': row['Gender'],
             'Race': row['Race'],
-            'Ethnicity': row['Ethnicity']
+            'Ethnicity': row['Ethnicity'],
+            'Type of Admission': row['Type of Admission']
         }
 
         print(data)
@@ -83,9 +86,9 @@ async def predict(data: PatientInput):
         encoder = bundle["encoder"]
         mortality_encoder = bundle["mortality_encoder"]
 
-        input_row_df = pd.DataFrame([data])
+        input_data_df = pd.DataFrame([data])
         encoder_input_features = encoder.feature_names_in_
-        input_row_df = input_row_df[[col for col in encoder_input_features if col in input_row_df.columns]]
+        input_row_df = input_data_df[[col for col in encoder_input_features if col in input_data_df.columns]]
 
         input_encoded_arr = encoder.transform(input_row_df)
         input_encoded_df = pd.DataFrame(input_encoded_arr, columns=encoder.get_feature_names_out())
@@ -95,7 +98,7 @@ async def predict(data: PatientInput):
         result.append({
         "total_costs": float(pred[0][0]),
         "length_of_stay": float(pred[0][1]),
-        "mortality": mortality_encoder.inverse_transform([int(pred[0, 3])])[0]
+        "mortality": mortality_encoder.inverse_transform([int(pred[0, 2])])[0]
         })
 
     print(result)
