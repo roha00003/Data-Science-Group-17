@@ -108,6 +108,25 @@ async def predict(data: PatientInput):
     number_of_results = 3
 
     result.sort(key=lambda x: x['total_costs'], reverse=False)
+    #result = result[:number_of_results]
+    res = []
+
+
+    already_seen_codes = set()
+    for entry in result:
+        if entry['procedure_code'][0:2] in already_seen_codes:
+            continue
+        already_seen_codes.add(entry['procedure_code'])
+        res.append(entry)
+
+    last_costs = 0
+    result = []
+    for entry in res:
+        if entry['total_costs'] == last_costs:
+            continue
+        last_costs = entry['total_costs']
+        result.append(entry)
+
     result = result[:number_of_results]
 
     def mortality_to_number(mortality):
