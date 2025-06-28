@@ -10,7 +10,7 @@ import numpy as np
 app = FastAPI()
 
 # Add type_of_admission here
-FEATURES = ['CCSR Procedure Code', 'Age Group', 'Gender', 'Race', 'Ethnicity']
+FEATURES = ['CCSR Procedure Code', 'Age Group', 'Gender', 'Race', 'Ethnicity', 'Type of Admission']
 OVERVIEW_CSV = "saved_models_filtered_rf/model_overview.csv"
 ROOT_PATH = os.getcwd()
 
@@ -73,6 +73,8 @@ async def predict(data: PatientInput):
 
         present_features = [feat for feat in FEATURES if data[feat] != ""]
         model_features = frozenset(present_features)
+
+        print(model_features)
         model_path = ROOT_PATH + model_dict.get(model_features)
 
         # für Lukas
@@ -104,7 +106,7 @@ async def predict(data: PatientInput):
     # now sort the result by total costs on descending order
     number_of_results = 3
 
-    result.sort(key=lambda x: x['total_costs'], reverse=True)
+    result.sort(key=lambda x: x['total_costs'], reverse=False)
     result = result[:number_of_results]
 
     def mortality_to_number(mortality):
@@ -125,4 +127,5 @@ async def predict(data: PatientInput):
     # now sort according to length of stay
     result.sort(key=lambda x: x['length_of_stay'], reverse=True)
 
+    print(result)
     return result
