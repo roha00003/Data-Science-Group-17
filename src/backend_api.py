@@ -28,7 +28,7 @@ for _, row in overview_df.iterrows():
 
 
 class PatientInput(BaseModel):
-    CCSR_Procedure_Code: str
+    Diagnosis_Code: str
     Age_Group: str
     Gender: str
     Race: str
@@ -39,7 +39,7 @@ class PatientInput(BaseModel):
 async def predict(data: PatientInput):
 
     row = {
-        'CCSR DIagnosis Code': data.CCSR_Procedure_Code.split('(')[-1].replace(')', '').strip(),
+        'CCSR Diagnosis Code': data.Diagnosis_Code.split('(')[-1].replace(')', '').strip(),
         'Age Group': data.Age_Group,
         'Gender': data.Gender,
         'Race': data.Race,
@@ -59,12 +59,14 @@ async def predict(data: PatientInput):
     for code in procedure_codes:
 
         data = {
-            'CCSR DIagnosis Code': code,
+            'CCSR Procedure Code': code,
             'Age Group': row['Age Group'],
             'Gender': row['Gender'],
             'Race': row['Race'],
             'Ethnicity': row['Ethnicity']
         }
+
+        print(data)
 
         present_features = [feat for feat in FEATURES if data[feat] != ""]
         model_features = frozenset(present_features)
@@ -81,7 +83,7 @@ async def predict(data: PatientInput):
         encoder = bundle["encoder"]
         mortality_encoder = bundle["mortality_encoder"]
 
-        input_row_df = pd.DataFrame([row])
+        input_row_df = pd.DataFrame([data])
         encoder_input_features = encoder.feature_names_in_
         input_row_df = input_row_df[[col for col in encoder_input_features if col in input_row_df.columns]]
 
@@ -95,4 +97,6 @@ async def predict(data: PatientInput):
         "length_of_stay": float(pred[0][1]),
         "mortality": mortality_encoder.inverse_transform([int(pred[0, 3])])[0]
         })
+
+    print(result)
     return result
