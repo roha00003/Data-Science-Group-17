@@ -17,6 +17,9 @@ ROOT_PATH = os.getcwd()
 with open(ROOT_PATH + "/data/diagnosis_to_procedure_dict.pkl", "rb") as file:
     diagnosis_to_procedure_dict = pickle.load(file)
 
+with open(ROOT_PATH + "/data/procedure_code_to_description_dict.pkl", "rb") as file:
+    procedure_code_to_description_dict = pickle.load(file)
+
 # Load model overview
 overview_df = pd.read_csv(OVERVIEW_CSV, dtype=str)
 model_dict = {}
@@ -38,7 +41,7 @@ class PatientInput(BaseModel):
 
 @app.post("/predict")
 async def predict(data: PatientInput):
-
+    print("Received data:", data)
     row = {
         'CCSR Diagnosis Code': data.Diagnosis_Code.split('(')[-1].replace(')', '').strip(),
         'Type of Admission': data.Type_of_Admission,
@@ -48,17 +51,19 @@ async def predict(data: PatientInput):
         'Ethnicity': data.Ethnicity
     }
 
+    """
     if row.get('CCSR Diagnosis Code') == "BLD004":
         return {
             "total_costs": 1000.0,
             "length_of_stay": 5.0,
             "mortality": 11
         }
+    """
 
     result = []
     procedure_codes = diagnosis_to_procedure_dict.get(row['CCSR Diagnosis Code'], [])
 
-    for code in procedure_codes:
+    for code, percentage in procedure_codes:
 
         data = {
             'CCSR Procedure Code': code,
@@ -98,16 +103,20 @@ async def predict(data: PatientInput):
         pred = model.predict(input_encoded_df).reshape(1, -1)
 
         result.append({
-        "procedure_code": code,
-        "total_costs": round(float(pred[0][0]), 2),
-        "length_of_stay": round(float(pred[0][1]),2),
-        "mortality": mortality_encoder.inverse_transform([int(round(pred[0, 2]))])[0]
+            "procedure_code": code,
+            "total_costs": round(float(pred[0][0]), -3),  # round to nearest 1000
+            "length_of_stay": round(float(pred[0][1])),  # round to the nearest whole number
+            "mortality": mortality_encoder.inverse_transform([int(round(pred[0, 2]))])[0],
+            "usage_percentage": round(percentage * 100, 2),
         })
 
     # now sort the result by total costs on descending order
     number_of_results = 3
 
-    result.sort(key=lambda x: x['total_costs'], reverse=False)
+    def combine_costs_and_usage(item):
+        return item['total_costs'] - 100 * item['usage_percentage']
+
+    result.sort(key=lambda x: combine_costs_and_usage(x), reverse=False)
     result = result[:number_of_results]
 
     def mortality_to_number(mortality):
@@ -122,11 +131,18 @@ async def predict(data: PatientInput):
         else:
             return 0
 
-    # now sort according to mortality
+    # sort according to mortality
     result.sort(key=lambda x: mortality_to_number(x['mortality']), reverse=True)
 
-    # now sort according to length of stay
+    # according to the usage percentage
+    result.sort(key=lambda x: x['usage_percentage'], reverse=True)
+
+    # sort according to length of stay
     result.sort(key=lambda x: x['length_of_stay'], reverse=True)
+
+    # remove mortality from the result
+    for item in result:
+        del item['mortality']
 
     print(result)
     return result
