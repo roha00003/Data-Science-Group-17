@@ -29,32 +29,39 @@ export async function POST(request: NextRequest) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        CCSR_Procedure_Code: data.diagnosis,
+        Diagnosis_Code: data.diagnosis,
         Age_Group: data.ageGroup,
         Gender: data.gender,
         Race: data.race,
         Ethnicity: data.ethnicity,
+        Type_of_Admission: data.admissionType,
       }),
     })
 
     const prediction = await response.json()
 
+    console.log("Prediction response:", prediction)
+
     if (!response.ok || prediction.error) {
       throw new Error(prediction.error || "Backend returned error")
     }
 
-    // Create treatment object from backend prediction
-    const treatment: Treatment = {
-      id: `${data.diagnosis}-predicted-treatment`,
-      name: "Predicted Personalized Treatment",
-      cost: prediction.total_costs,
-      mortality: prediction.mortality,
-      description: "Treatment plan based on predicted outcomes for the given diagnosis and patient demographics.",
-      stay: prediction.length_of_stay,
+    const allTreatments: Treatment [] = []
+
+   for (let i = 0; i < prediction.length; i++) {
+      allTreatments.push({
+        id: `${data.diagnosis}-predicted-treatment`,
+        name: "Procedure: " + prediction[i].procedure_code,
+        cost: prediction[i].total_costs,
+        mortality: prediction[i].mortality,
+        description: "Treatment plan based on predicted outcomes for the given diagnosis and patient demographics.",
+        stay: prediction[i].length_of_stay,
+      })
+
     }
 
     return NextResponse.json({
-      treatments: [treatment],
+      treatments: allTreatments,
       message: "Prediction retrieved successfully",
       demographics: data,
     })

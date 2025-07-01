@@ -90,6 +90,7 @@ export function DiagnosisForm() {
               .split('\n')
               .map((line) => line.split('\n')
                 .filter((item) => item.trim() !== "")) // Filter out empty lines
+          // @ts-ignore
           setDiagnoses(diagData)
         })
         .catch(err => console.error(err))
@@ -393,7 +394,7 @@ export function DiagnosisForm() {
                           </div>
                           <div className="flex items-center gap-1 text-sm text-muted-foreground">
                             <AlertTriangle className="h-4 w-4" />
-                            Mortality: {treatment.mortality}%
+                            Mortality: {treatment.mortality}
                           </div>
                           <div className="flex items-center gap-1 text-sm text-muted-foreground">
                             <Info className="h-4 w-4" />

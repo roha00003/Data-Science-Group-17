@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { Home, History, Calendar, DollarSign, AlertTriangle, Trash2 } from "lucide-react"
+import { Home, History, Calendar, DollarSign, AlertTriangle, Trash2, BriefcaseMedical } from "lucide-react"
 import { useRouter } from "next/navigation"
 
 import {
@@ -76,14 +76,6 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
     }
   }, [])
 
-  const handleHomeClick = () => {
-    try {
-      router.push("/")
-    } catch (error) {
-      console.error("Error clearing localStorage:", error)
-    }
-  }
-
   const clearHistory = () => {
     try {
       localStorage.removeItem("treatmentHistory")
@@ -110,6 +102,8 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
     if (demographics.ageGroup) items.push(`Age: ${demographics.ageGroup}`)
     if (demographics.gender) items.push(`Gender: ${demographics.gender}`)
     if (demographics.admissionType) items.push(`Admission: ${demographics.admissionType}`)
+    if(demographics.race) items.push(`Race: ${demographics.race}`)
+    if(demographics.ethnicity) items.push(`Ethnicity: ${demographics.ethnicity}`)
     return items.join(" • ")
   }
 
@@ -118,9 +112,9 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       <SidebarHeader>
         <SidebarMenu>
           <SidebarMenuItem>
-            <SidebarMenuButton size="lg" onClick={handleHomeClick} className="cursor-pointer">
+            <SidebarMenuButton size="lg">
               <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground">
-                <Home className="size-4" />
+                <BriefcaseMedical className="size-4" />
               </div>
               <div className="flex flex-col gap-0.5 leading-none">
                 <span className="font-semibold">MediCost</span>
@@ -198,11 +192,11 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                           </div>
                           <div className="flex items-center justify-between text-xs">
                             <div className="flex items-center gap-1 text-green-400">
-                              <DollarSign className="h-3 w-3" />${entry.selectedTreatment.cost.toLocaleString()}
+                              <DollarSign className="h-3 w-3" />{entry.selectedTreatment.cost.toLocaleString()}
                             </div>
                             <div className="flex items-center gap-1 text-orange-400">
                               <AlertTriangle className="h-3 w-3" />
-                              {entry.selectedTreatment.mortality}%
+                              {entry.selectedTreatment.mortality}
                             </div>
                           </div>
                         </div>
