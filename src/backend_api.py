@@ -110,12 +110,12 @@ async def predict(data: PatientInput):
             "usage_percentage": round(percentage * 100, 2),
         })
 
-    # now sort the result by total costs on descending order
     number_of_results = 3
 
     def combine_costs_and_usage(item):
         return item['total_costs'] - 100 * item['usage_percentage']
 
+    # sort according to costs and usage
     result.sort(key=lambda x: combine_costs_and_usage(x), reverse=False)
     result = result[:number_of_results]
 
@@ -134,7 +134,7 @@ async def predict(data: PatientInput):
     # sort according to mortality
     result.sort(key=lambda x: mortality_to_number(x['mortality']), reverse=True)
 
-    # according to the usage percentage
+    # sort according to the usage percentage
     result.sort(key=lambda x: x['usage_percentage'], reverse=True)
 
     # sort according to length of stay
