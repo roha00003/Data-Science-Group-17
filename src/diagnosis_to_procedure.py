@@ -21,7 +21,10 @@ for diagnosis_code in df['CCSR Diagnosis Code'].unique():
     procedure_codes_res = []
     for code in procedure_codes:
         if (subset['CCSR Procedure Code'] == code).sum() >= threshold:
-            procedure_codes_res.append((code, (subset['CCSR Procedure Code'] == code).sum() / len(subset), (subset['CCSR Procedure Code'] == code).median()))
+            use_percentage = (subset['CCSR Procedure Code'] == code).sum() / len(subset)
+            median_value = subset[subset['CCSR Procedure Code'] == code]['Total Costs'].astype(float).median()
+            print(median_value)
+            procedure_codes_res.append((code, (subset['CCSR Procedure Code'] == code).sum() / len(subset), median_value))
 
 
     diagnosis_to_procedure_dict[diagnosis_code] = procedure_codes_res
