@@ -138,6 +138,9 @@ async def predict(data: PatientInput):
     # sort according to length of stay
     result.sort(key=lambda x: x['length_of_stay'], reverse=True)
 
+    # sort according to total costs
+    result.sort(key=lambda x: x['total_costs'], reverse=True)
+
     # remove mortality from the result
     for item in result:
         del item['mortality']
