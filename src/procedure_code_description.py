@@ -15,7 +15,10 @@ for code in unique_procedure_codes:
     descriptions = subset['CCSR Procedure Description'].unique().tolist()
     assert len(descriptions) == 1, f"Multiple descriptions found for code {code}: {description}"
     description = descriptions[0] + " (" + code + ")"
+    code_to_description_dict[code] = description
 
+
+print(code_to_description_dict.get("EYP001"))
 
 # Save the dictionary to a file
 with open('../data/procedure_code_to_description_dict.pkl', 'wb') as file:
