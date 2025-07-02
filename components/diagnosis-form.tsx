@@ -202,7 +202,7 @@ export function DiagnosisForm() {
     window.dispatchEvent(new Event("localStorageUpdate"))
   }
 
-  const canGetTreatments = diagnosisData.diagnosis.length > 0
+  const canGetTreatments = diagnosisData.diagnosis.length > 0 && diagnosisData.admissionType !== ""
 
   return (
     <div className="space-y-6">
