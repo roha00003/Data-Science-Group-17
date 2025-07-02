@@ -103,8 +103,8 @@ async def predict(data: PatientInput):
         pred = model.predict(input_encoded_df).reshape(1, -1)
 
         result.append({
-            "procedure_code": code,
-            "total_costs": round(float(pred[0][0]), -3),  # round to nearest 1000
+            "procedure_code": procedure_code_to_description_dict.get(code, code),
+            "total_costs": round(float(pred[0][0]), 2),  # round to nearest 1000
             "length_of_stay": round(float(pred[0][1])),  # round to the nearest whole number
             "mortality": mortality_encoder.inverse_transform([int(round(pred[0, 2]))])[0],
             "usage_percentage": round(percentage * 100, 2),
@@ -143,6 +143,7 @@ async def predict(data: PatientInput):
     # remove mortality from the result
     for item in result:
         del item['mortality']
+        round(item['total_costs'], -3)
 
     print(result)
     return result
