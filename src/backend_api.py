@@ -63,7 +63,7 @@ async def predict(data: PatientInput):
     result = []
     procedure_codes = diagnosis_to_procedure_dict.get(row['CCSR Diagnosis Code'], [])
 
-    for code, percentage in procedure_codes:
+    for code, percentage, median in procedure_codes:
 
         data = {
             'CCSR Procedure Code': code,
@@ -104,7 +104,7 @@ async def predict(data: PatientInput):
 
         result.append({
             "procedure_code": procedure_code_to_description_dict.get(code, code),
-            "total_costs": round(float(pred[0][0]), 2),  # round to nearest 1000
+            "total_costs": round(float(pred[0][0]) - percentage * float(median), -2),  # round to nearest 100
             "length_of_stay": round(float(pred[0][1])),  # round to the nearest whole number
             "mortality": mortality_encoder.inverse_transform([int(round(pred[0, 2]))])[0],
             "usage_percentage": round(percentage * 100, 2),
@@ -112,11 +112,9 @@ async def predict(data: PatientInput):
 
     number_of_results = 3
 
-    def combine_costs_and_usage(item):
-        return item['total_costs'] - 100 * item['usage_percentage']
 
     # sort according to costs and usage
-    result.sort(key=lambda x: combine_costs_and_usage(x), reverse=False)
+    result.sort(key=lambda x: x['total_costs'], reverse=False)
     result = result[:number_of_results]
 
     def mortality_to_number(mortality):

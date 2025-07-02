@@ -21,7 +21,8 @@ for diagnosis_code in df['CCSR Diagnosis Code'].unique():
     procedure_codes_res = []
     for code in procedure_codes:
         if (subset['CCSR Procedure Code'] == code).sum() >= threshold:
-            procedure_codes_res.append((code, (subset['CCSR Procedure Code'] == code).sum() / len(subset)))
+            procedure_codes_res.append((code, (subset['CCSR Procedure Code'] == code).sum() / len(subset), (subset['CCSR Procedure Code'] == code).median()))
+
 
     diagnosis_to_procedure_dict[diagnosis_code] = procedure_codes_res
 
