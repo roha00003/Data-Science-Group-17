@@ -104,7 +104,7 @@ async def predict(data: PatientInput):
 
         result.append({
             "procedure_code": procedure_code_to_description_dict.get(code, code),
-            "total_costs": round(float(pred[0][0]) - percentage * (float(median) - float(pred[0][0])), -2) if round(float(pred[0][0]) - percentage * (float(median) - float(pred[0][0])), -2) < 0.1 * float(pred[0][0]) else median,  # round to nearest 100
+            "total_costs": round(float(pred[0][0]) - percentage * (float(median) - float(pred[0][0])), -2) if round(float(pred[0][0]) - percentage * (float(median) - float(pred[0][0])), -2) >= 0.1 * float(pred[0][0]) else median,  # round to nearest 100
             "length_of_stay": round(float(pred[0][1])),  # round to the nearest whole number
             "mortality": mortality_encoder.inverse_transform([int(round(pred[0, 2]))])[0],
             "usage_percentage": round(percentage * 100, 2),
