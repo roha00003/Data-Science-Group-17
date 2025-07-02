@@ -143,7 +143,7 @@ async def predict(data: PatientInput):
     # remove mortality from the result
     for item in result:
         del item['mortality']
-        round(item['total_costs'], -3)
+        item['total_costs'] = round(item['total_costs'], -3)
 
     print(result)
     return result
