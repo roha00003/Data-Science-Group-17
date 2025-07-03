@@ -2,7 +2,6 @@ import unittest
 import os
 import pandas as pd
 import joblib
-import numpy as np
 
 class ModelTester(unittest.TestCase):
     model_dict = None

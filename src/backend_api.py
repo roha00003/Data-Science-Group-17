@@ -1,11 +1,10 @@
 # backend_api.py
-from fastapi import FastAPI, Request
+from fastapi import FastAPI
 from pydantic import BaseModel
 import pandas as pd
 import joblib
 import os
 import pickle
-import numpy as np
 
 app = FastAPI()
 
