@@ -1,17 +1,18 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Prerequisites
+
+- **Node.js**: Version 18.x or higher
+- **npm**: Version 11.3.0 or higher (tested on 11.3.0)
+
 ## Getting Started
 
-First, run the development server:
+Build and run the application:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run build
+npm start
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

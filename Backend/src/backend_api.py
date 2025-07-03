@@ -63,16 +63,16 @@ async def predict(data: PatientInput):
             'Type of Admission': row['Type of Admission']
         }
 
-        print(data)
 
         present_features = [feat for feat in FEATURES if data[feat] != ""]
         model_features = frozenset(present_features)
 
-        print(model_features)
         model_path = ROOT_PATH + model_dict.get(model_features)
 
         # for adjustment
         model_path = model_path.replace("..", "")
+
+        print("Model path:", model_path)
 
         if not model_path or not os.path.exists(model_path):
             return {"error": "Model not found for these features"}
