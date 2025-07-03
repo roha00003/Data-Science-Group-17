@@ -39,7 +39,6 @@ class PatientInput(BaseModel):
 
 @app.post("/predict")
 async def predict(data: PatientInput):
-    print("Received data:", data)
     row = {
         'CCSR Diagnosis Code': data.Diagnosis_Code.split('(')[-1].replace(')', '').strip(),
         'Type of Admission': data.Type_of_Admission,
@@ -71,8 +70,6 @@ async def predict(data: PatientInput):
 
         # for adjustment
         model_path = model_path.replace("..", "")
-
-        print("Model path:", model_path)
 
         if not model_path or not os.path.exists(model_path):
             return {"error": "Model not found for these features"}
@@ -134,5 +131,4 @@ async def predict(data: PatientInput):
     for item in result:
         del item['mortality']
 
-    print(result)
     return result
