@@ -194,10 +194,6 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                             <div className="flex items-center gap-1 text-green-400">
                               <DollarSign className="h-3 w-3" />{entry.selectedTreatment.cost.toLocaleString()}
                             </div>
-                            <div className="flex items-center gap-1 text-orange-400">
-                              <AlertTriangle className="h-3 w-3" />
-                              {entry.selectedTreatment.mortality}
-                            </div>
                           </div>
                         </div>
                       )}

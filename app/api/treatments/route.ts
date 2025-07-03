@@ -13,7 +13,7 @@ interface Treatment {
   id: string
   name: string
   cost: number
-  mortality: number
+  usage_percentage: number
   description: string
   stay: number
 }
@@ -53,7 +53,7 @@ export async function POST(request: NextRequest) {
         id: `${data.diagnosis}-predicted-treatment`,
         name: "Procedure: " + prediction[i].procedure_code,
         cost: prediction[i].total_costs,
-        mortality: prediction[i].mortality,
+        usage_percentage: prediction[i].usage_percentage,
         description: "Treatment plan based on predicted outcomes for the given diagnosis and patient demographics.",
         stay: prediction[i].length_of_stay,
       })

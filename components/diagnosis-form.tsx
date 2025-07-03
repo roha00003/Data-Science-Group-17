@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { Check, ChevronsUpDown, Loader2, Activity, DollarSign, AlertTriangle, RotateCcw, Info } from "lucide-react"
+import { Check, ChevronsUpDown, Loader2, Activity, DollarSign, AlertTriangle, RotateCcw, Info, Percent } from "lucide-react"
 
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from "@/components/ui/command"
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
@@ -24,7 +24,7 @@ interface Treatment {
   id: string
   name: string
   cost: number
-  mortality: number
+  usage_percentage: number
   description: string
   stay: number
 }
@@ -393,8 +393,8 @@ export function DiagnosisForm() {
                             {treatment.cost.toLocaleString()}
                           </div>
                           <div className="flex items-center gap-1 text-sm text-muted-foreground">
-                            <AlertTriangle className="h-4 w-4" />
-                            Mortality: {treatment.mortality}
+                            <Percent className="h-4 w-4" />
+                            Usage Percentage: {treatment.usage_percentage}
                           </div>
                           <div className="flex items-center gap-1 text-sm text-muted-foreground">
                             <Info className="h-4 w-4" />
