@@ -1,0 +1,17 @@
+features,model_path
+"['CCSR Procedure Code', 'Type of Admission', 'Age Group', 'Race', 'Ethnicity']",/Users/robin/PycharmProjects/Data-Science-Group-17/saved_models_combined/CCSR_Procedure_Code__Type_of_Admission__Age_Group__Race__Ethnicity.pkl
+"['CCSR Procedure Code', 'Type of Admission', 'Gender', 'Race', 'Ethnicity']",/Users/robin/PycharmProjects/Data-Science-Group-17/saved_models_combined/CCSR_Procedure_Code__Type_of_Admission__Gender__Race__Ethnicity.pkl
+"['CCSR Procedure Code', 'Type of Admission', 'Gender']",/Users/robin/PycharmProjects/Data-Science-Group-17/saved_models_combined/CCSR_Procedure_Code__Type_of_Admission__Gender.pkl
+"['CCSR Procedure Code', 'Type of Admission', 'Age Group', 'Ethnicity']",/Users/robin/PycharmProjects/Data-Science-Group-17/saved_models_combined/CCSR_Procedure_Code__Type_of_Admission__Age_Group__Ethnicity.pkl
+"['CCSR Procedure Code', 'Type of Admission', 'Gender', 'Ethnicity']",/Users/robin/PycharmProjects/Data-Science-Group-17/saved_models_combined/CCSR_Procedure_Code__Type_of_Admission__Gender__Ethnicity.pkl
+"['CCSR Procedure Code', 'Type of Admission', 'Age Group', 'Gender', 'Race', 'Ethnicity']",/Users/robin/PycharmProjects/Data-Science-Group-17/saved_models_combined/CCSR_Procedure_Code__Type_of_Admission__Age_Group__Gender__Race__Ethnicity.pkl
+"['CCSR Procedure Code', 'Type of Admission', 'Age Group']",/Users/robin/PycharmProjects/Data-Science-Group-17/saved_models_combined/CCSR_Procedure_Code__Type_of_Admission__Age_Group.pkl
+"['CCSR Procedure Code', 'Type of Admission', 'Race']",/Users/robin/PycharmProjects/Data-Science-Group-17/saved_models_combined/CCSR_Procedure_Code__Type_of_Admission__Race.pkl
+"['CCSR Procedure Code', 'Type of Admission', 'Age Group', 'Race']",/Users/robin/PycharmProjects/Data-Science-Group-17/saved_models_combined/CCSR_Procedure_Code__Type_of_Admission__Age_Group__Race.pkl
+"['CCSR Procedure Code', 'Type of Admission', 'Ethnicity']",/Users/robin/PycharmProjects/Data-Science-Group-17/saved_models_combined/CCSR_Procedure_Code__Type_of_Admission__Ethnicity.pkl
+"['CCSR Procedure Code', 'Type of Admission', 'Race', 'Ethnicity']",/Users/robin/PycharmProjects/Data-Science-Group-17/saved_models_combined/CCSR_Procedure_Code__Type_of_Admission__Race__Ethnicity.pkl
+"['CCSR Procedure Code', 'Type of Admission']",/Users/robin/PycharmProjects/Data-Science-Group-17/saved_models_combined/CCSR_Procedure_Code__Type_of_Admission.pkl
+"['CCSR Procedure Code', 'Type of Admission', 'Age Group', 'Gender']",/Users/robin/PycharmProjects/Data-Science-Group-17/saved_models_combined/CCSR_Procedure_Code__Type_of_Admission__Age_Group__Gender.pkl
+"['CCSR Procedure Code', 'Type of Admission', 'Age Group', 'Gender', 'Ethnicity']",/Users/robin/PycharmProjects/Data-Science-Group-17/saved_models_combined/CCSR_Procedure_Code__Type_of_Admission__Age_Group__Gender__Ethnicity.pkl
+"['CCSR Procedure Code', 'Type of Admission', 'Age Group', 'Gender', 'Race']",/Users/robin/PycharmProjects/Data-Science-Group-17/saved_models_combined/CCSR_Procedure_Code__Type_of_Admission__Age_Group__Gender__Race.pkl
+"['CCSR Procedure Code', 'Type of Admission', 'Gender', 'Race']",/Users/robin/PycharmProjects/Data-Science-Group-17/saved_models_combined/CCSR_Procedure_Code__Type_of_Admission__Gender__Race.pkl

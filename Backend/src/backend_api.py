@@ -1,18 +1,16 @@
-# backend_api.py
-from fastapi import FastAPI, Request
+from fastapi import FastAPI
 from pydantic import BaseModel
 import pandas as pd
 import joblib
 import os
 import pickle
-import numpy as np
 
 app = FastAPI()
 
 # Add type_of_admission here
 FEATURES = ['CCSR Procedure Code', 'Age Group', 'Gender', 'Race', 'Ethnicity', 'Type of Admission']
-OVERVIEW_CSV = "saved_models_filtered_rf/model_overview.csv"
-ROOT_PATH = os.getcwd()
+OVERVIEW_CSV = "model/model_overview.csv"
+ROOT_PATH = os.getcwd() #+ "/Backend" # Adjust the path as necessary
 
 with open(ROOT_PATH + "/data/diagnosis_to_procedure_dict.pkl", "rb") as file:
     diagnosis_to_procedure_dict = pickle.load(file)
@@ -51,15 +49,6 @@ async def predict(data: PatientInput):
         'Ethnicity': data.Ethnicity
     }
 
-    """
-    if row.get('CCSR Diagnosis Code') == "BLD004":
-        return {
-            "total_costs": 1000.0,
-            "length_of_stay": 5.0,
-            "mortality": 11
-        }
-    """
-
     result = []
     procedure_codes = diagnosis_to_procedure_dict.get(row['CCSR Diagnosis Code'], [])
 
@@ -82,7 +71,7 @@ async def predict(data: PatientInput):
         print(model_features)
         model_path = ROOT_PATH + model_dict.get(model_features)
 
-        # für Lukas
+        # for adjustment
         model_path = model_path.replace("..", "")
 
         if not model_path or not os.path.exists(model_path):
