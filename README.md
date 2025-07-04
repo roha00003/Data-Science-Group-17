@@ -45,7 +45,7 @@ Our models simultaneously predict:
 
 - **Aygün Çiloğlu** - s8aycilo@stud.uni-saarland.de
 - **Robin Hans** - roha00003@stud.uni-saarland.de
-- **Fabian Jost** - s8fajost@stud.uni-saarland.de
+- **Fabian Jost** 🙈 - s8fajost@stud.uni-saarland.de
 - **Lukas Müller** - lumu00002@stud.uni-saarland.de
 - **Sophie Orbán** - soor00001@stud.uni-saarland.de
 
